@@ -4,7 +4,7 @@ There are 24 weeks between now and June, which is when I continue my journey at 
 in Chicago. Desiring to make good use of these 24 weeks and have some momentum when I get to Chicago, I am taking it upon myself to
 start building something, right now.
 
-I've spent a lot of time working with online code tutorials and exercises. As a result, I'm getting good at completing tutorials and isolated challenges in Ruby, but I'm not really very much closer to being a web developer. Tutorials are great for starters, but it's time I adopt the JFDI method and just fucking do it.
+I've spent a lot of time working with online code tutorials and exercises. As a result, I'm getting good at completing tutorials and isolated challenges in Ruby, but I'm not really very much closer to being a web developer. Tutorials are great for starters, but it's time I adopt the JFDI method.
 
 /----/
 
