@@ -1,0 +1,147 @@
+/*Light Gray outline for each element. Comment out upon publishing!!*/
+
+* {
+	/*border: 1px solid lightGray;*/
+}
+
+/*Main Divs: Header, Center, and (opt)Footer*/
+
+#header {
+	background-color: #009090;
+	height: 3em;
+	width: full;
+	margin: none;
+	border-radius: 1em;
+
+}
+
+
+#center {
+	
+	position: relative;
+	margin: auto;
+	clear: both;
+
+}
+
+/*#footer {
+	
+	background-color: #009090;
+	height: 40px;
+	width: 100%;
+}
+*/
+
+/*Default Settings*/
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+div {
+	background-color: white;
+}
+
+/*Header Elements*/
+
+h3 {
+	color: lightGray;
+	font-size: 2em;
+	clear: right;
+	float: left;
+	padding-left: 1em;
+	display: inline;
+	margin-top: .15em;
+	font-style: italic;
+}
+
+ul {
+	float: right;
+
+}
+
+li {
+	display: inline;
+	color: #cfffff;
+	padding-right: 1.5em;
+	font-size: 1em;
+}
+
+/*Links*/
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Center Elements*/
+
+table {
+	position: relative;
+	margin: auto;
+	padding-top: 150px;
+	padding-bottom: 100px;
+
+
+}
+
+td {
+	border: none;
+	height: 4em;
+	width: 4em;
+
+}
+
+th {
+	width: 640px;
+	padding-bottom: 25px;
+	
+}
+
+.th_textbox {
+	width: 480px;
+}
+
+#gravatar_image {
+	height: 8em;
+	width: 8em;
+	border-radius: 100%;
+	border: 3px solid #009090;
+	/*float: right;*/
+	/*clear: left;*/
+	margin: 8px -10px 8px 8px;
+
+}
+
+#th_title {
+	color: orange;
+	font-weight: bolder;
+	font-size: 5em;
+	float: left;
+	padding-top: .1em;
+
+
+}
+
+#th_subtitle {
+	color: #009090;
+	font-size: 2em;
+	font-weight: lighter;
+	letter-spacing: 8px;
+	float: left;
+	clear: left;
+
+}
+
+/*Empty_site divs are to be deleted and replaces with circle links to websites!*/
+.empty_site {
+	height: 2em;
+	width: 2em;
+	border: 3px solid orange;
+	border-radius: 100%;
+	margin: auto;
+
+}
+
+
+
+
