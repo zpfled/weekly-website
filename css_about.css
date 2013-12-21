@@ -12,7 +12,7 @@
 	height: 3em;
 	width: full;
 	margin: none;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 
 }
 
@@ -25,27 +25,34 @@
 
 }
 
-/*#footer {
-	
-	background-color: #009090;
-	height: 40px;
-	width: 100%;
-}
-*/
 
 /*Default Settings*/
+html {
+	background-color: #faf8f8;
+}
+
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 div {
-	background-color: white;
+	background-color: #faf8f8;
 }
 
 /*Header Elements*/
 
+#gravatar_image {
+	height: 1.1em;
+	width: 1.1em;
+	border-radius: 100%;
+	border: 2px solid orange;
+	float: left;
+	clear: right;	
+	margin-right: .5em;
+}
+
 h3 {
-	color: white;
+	color: #faf8f8;
 	font-size: 2em;
 	clear: right;
 	float: left;
@@ -60,88 +67,79 @@ ul {
 
 }
 
-li {
+.navbar li {
 	display: inline;
 	color: #cfffff;
 	padding-right: 1.5em;
 	font-size: 1em;
 }
 
+/*Body Elements*/
+
+.text_box {
+	width: 75%;
+	vertical-align: auto;
+	margin: 8em auto auto auto;
+	position: static;
+}
+
+.text_box div {
+	position: relative;
+	width: 49.4%;
+
+}
+.text_box h4 {
+	font-size: 2em;
+	font-style: italic;
+	font-weight: 200;
+	color: #faf8f8;
+	padding-left: 1em;
+}
+
+span {
+	background-color: orange;
+	border-radius: 1em;
+	padding-left: .2em;
+	padding-right: .2em;
+
+}
+
+.text_box p {
+	color: #009090;
+	padding-left: 2em;
+}
+
+.text_box a {
+	color: #009090;
+}
+
+.text_box a:hover {
+	color: orange;
+}
+
+#left {
+	float: left;
+	clear: left;
+	border-right: .2em solid orange;
+
+}
+
+#right {
+	float: right;
+	clear: right;
+	border-left: .2em solid #009090;
+}
+
+li {
+	color: #009090;
+	text-indent: 1em;
+	padding-right: 3em;
+}
+
+
 /*Links*/
 
 a {
 	text-decoration: none;
-	color: white;
+	color: #faf8f8;
 }
-
-/*Center Elements*/
-
-table {
-	position: relative;
-	margin: auto;
-	padding-top: 150px;
-	padding-bottom: 100px;
-
-
-}
-
-td {
-	border: none;
-	height: 4em;
-	width: 4em;
-
-}
-
-th {
-	width: 640px;
-	padding-bottom: 25px;
-	
-}
-
-.th_textbox {
-	width: 480px;
-}
-
-#gravatar_image {
-	height: 1.1em;
-	width: 1.1em;
-	border-radius: 100%;
-	border: 2px solid orange;
-	float: left;
-	clear: right;	
-	margin-right: .5em;
-}
-
-#th_title {
-	color: orange;
-	font-weight: bolder;
-	font-size: 5em;
-	float: left;
-	padding-top: .1em;
-
-
-}
-
-#th_subtitle {
-	color: #009090;
-	font-size: 2em;
-	font-weight: lighter;
-	letter-spacing: 8px;
-	float: left;
-	clear: left;
-
-}
-
-/*Empty_site divs are to be deleted and replaces with circle links to websites!*/
-.empty_site {
-	height: 2em;
-	width: 2em;
-	border: 3px solid orange;
-	border-radius: 100%;
-	margin: auto;
-
-}
-
-
-
-

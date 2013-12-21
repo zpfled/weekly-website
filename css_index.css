@@ -12,7 +12,7 @@
 	height: 3em;
 	width: full;
 	margin: none;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 
 }
 
@@ -25,21 +25,21 @@
 
 }
 
-/*#footer {
-	
-	background-color: #009090;
-	height: 40px;
-	width: 100%;
-}
-*/
-
 /*Default Settings*/
+html {
+	background-color: #faf8f8;
+}
+
+head {
+	background-color: #faf8f8;
+}
+
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 div {
-	background-color: white;
+	background-color: #faf8f8;
 }
 
 /*Header Elements*/
@@ -71,7 +71,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: #faf8f8;
 }
 
 /*Center Elements*/
@@ -107,11 +107,23 @@ th {
 	width: 8em;
 	border-radius: 100%;
 	border: 3px solid #009090;
-	/*float: right;*/
-	/*clear: left;*/
-	margin: 8px -10px 8px 8px;
+	background-image: url(http://www.gravatar.com/avatar/205e3db441112353fd8f76a108e2a839);
+	background-size: 8em;
 
+	margin: 1em -2em 1em 1em;
+	
 }
+
+/*#gravatar_image:hover {
+	-webkit-filter: opacity(30%);
+    -moz-filter: opacity(30%);
+    -o-filter: opacity(30%);
+    -ms-filter: opacity(30%);
+    filter: opacity(30%); 
+    color: #009090;
+    font-size: 1em;
+}*/
+
 
 #th_title {
 	color: orange;
@@ -140,9 +152,33 @@ th {
 	border: 3px solid orange;
 	border-radius: 100%;
 	margin: auto;
+}
 
+.text_site {
+	height: 4em;
+	width: 4em;
+	border: 3px solid #009090;
+	background-color: orange;
+	color: #faf8f8;
+	border-radius: 100%;
+	margin: auto;
+	font-size: 1em;
+
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+
+	transition:.5s;
+}
+
+.text_site:hover {
+	background-color: #FFCC99;
+	color: #009090;
 }
 
 
-
+.text_site_text {
+		text-align: center;
+}
 
