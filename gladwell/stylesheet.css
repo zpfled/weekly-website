@@ -39,8 +39,8 @@ footer, header, nav, section {
     min-height: inherit;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 8em;
-    padding-right: 8em;
+    padding-left: 10%;
+    padding-right: 10%;
     clear: both;
     overflow: hidden;
 }
@@ -202,7 +202,7 @@ li {
     clear: both;
     display: block;
     overflow: scroll;
-    width: auto;
+    width: 75%;
 }
 
 .left-box form button {
@@ -236,11 +236,17 @@ li {
 
 .feedback {
     position: relative;
-
+    width: 25%;
     float: right;
+    color: #45555f;
+    word-wrap: break-word;
+    background-color: rgba(255,255,255,0.4);
+    text-shadow: none;
+    border-radius: .12em;
+    padding: 0 .8em 0 1em;
+    line-height: 1.5em;
 
-    background: blue;
-    opacity: 50%;
+    
 }
 
 
@@ -253,7 +259,7 @@ li {
     color: #592C35;
     min-width: 100%;
     overflow: hidden;
-    padding-bottom: 2em;
+    padding: 4em 0 4em 0;
 }
 
 .span4 {
@@ -284,13 +290,12 @@ li {
 }
 
 .steps p {
-    color: gray;
+    color: #595050;
     font-family: Tahoma;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: lighter;
-    line-height: 1.2em;
+    line-height: 1.5em;
     letter-spacing: .1em;
     clear: both;
     padding-left: 7em;
 }
-
