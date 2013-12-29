@@ -33,7 +33,13 @@ var gladwells = [
 
 function talkToGladwell(form) {
 	var userName = form.inputBox.value;
-	randomGladwellQuote(userName);
+	
+	if (userName) {
+		randomGladwellQuote(userName);
+	} else {
+		userName = "friend";
+		randomGladwellQuote(userName);
+	}
 }
 
 function randomGladwellQuote(name) {

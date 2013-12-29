@@ -182,3 +182,57 @@ th {
 		text-align: center;
 }
 
+.image_site {
+	height: 4em;
+	width: 4em;
+	border: 3px solid #009090;
+	background-color: orange;
+	color: #faf8f8;
+	border-radius: 100%;
+	margin: auto;
+	font-size: 1em;
+	overflow: hidden;
+
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+
+	transition:.5s;
+	position: relative;
+	vertical-align: middle;
+
+}
+
+.image_site img {
+	height: 4em;
+	width: auto;
+	padding: auto;
+	position: absolute;
+	overflow: hidden;
+	text-align: center;
+}
+
+.image_site:hover {
+	background-color: #FFCC99;
+	color: #009090;
+}
+
+.image_site img:hover {
+	opacity: 0.2;
+}
+
+.image_site .text {
+	color: #009090;
+	vertical-align: middle;
+}
+
+.image_site:hover .text {
+	visibility: visible;
+	z-index: 100;
+	position: relative;
+}
+
+.image-site .text:hover {
+	color: white;
+}
