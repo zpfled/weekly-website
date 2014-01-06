@@ -207,19 +207,17 @@ th {
 .image_site img {
 	height: 4em;
 	width: auto;
-	padding: auto;
+	padding: inherit;
 	position: absolute;
 	overflow: hidden;
-	text-align: center;
 }
 
 .image_site:hover {
 	background-color: #FFCC99;
-	color: #009090;
 }
 
 .image_site img:hover {
-	opacity: 0.2;
+	opacity: 0.7;
 }
 
 .image_site .text {
