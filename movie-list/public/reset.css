@@ -1,0 +1,119 @@
+
+
+/* HTML Boilerplate */  
+  
+html, body, div,  
+h1, h2, h3, h4, h5, p,  
+img,  
+ul, li,  
+form, nav 
+article,  
+section {  
+    margin:0;  
+    padding:0;  
+    border:0;  
+    font-size:100%;  
+    font: inherit;  
+    vertical-align:baseline;  
+}  
+  
+article, section {  
+        display:block;
+        clear: both;
+}  
+  
+input, select { vertical-align:middle; } 
+ 
+/* END RESET CSS */ 
+ 
+/* font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/ */  
+body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */  
+/*input { font:99% sans-serif; }  */
+    
+/* minimal base styles */  
+  
+body {  
+    color: #444;  
+    
+    font-family: Georgia, serif;
+}  
+  
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }  
+  
+/* always force a scrollbar in non-IE: */  
+html { overflow-y: scroll; }  
+  
+/* accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */  
+a:hover, a:active {
+    text-decoration: underline; 
+}  
+  
+a, a:active, a:visited { color: inherit; }  
+a:hover { color: inherit; } 
+
+  
+/* remove margins for navigation lists */  
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }  
+  
+small { font-size: 85%; }  
+strong { font-weight: bold; }  
+  
+  
+/* hand cursor on clickable input elements */  
+input[type="submit"] { cursor: pointer; }  
+  
+/* webkit browsers add a 2px margin outside the chrome of form elements */  
+button, input, select, textarea { margin: 0; }  
+  
+/* colors for form validity */  
+input:valid, textarea:valid   {  }  
+input:invalid, textarea:invalid {  
+            border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;  
+}  
+
+
+::-moz-selection{ background: orange; color:#fff; text-shadow: none; }  
+::selection { background:orange; color:#fff; text-shadow: none; }  
+   
+a:link { -webkit-tap-highlight-color: orange; }  
+
+  
+/* bicubic resizing for non-native sized IMG: 
+     code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */  
+.ie7 img { -ms-interpolation-mode: bicubic; } 
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    /*border: 2px #53e6c3 solid;*/
+    border: none;
+    /*border-radius: 1em;*/
+    /*box-shadow: 0px 0px 10px #53e6c3;*/
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.pull-left {
+    float: left;
+    position: relative;
+}
+
+.pull-right {
+    float: right;
+    position: relative;
+}
+
+.left-wrapper {
+    width: 400px;
+    /*float: right;*/
+    text-align: right;
+}
+
+.right-wrapper {
+    width: 420px;
+    /*float: left;*/
+    text-align: left;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
