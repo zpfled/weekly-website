@@ -1,0 +1,232 @@
+html, body {
+	display: block;
+	margin: 0 0 0 0;
+	height: 100%;
+	font-family: Helvetica; 
+	color: white;
+
+}
+
+section {
+	background: #000030;
+	min-width: 100%;
+	min-height: 10%;
+	overflow: hidden;
+
+}
+
+.header {
+	height: 5%;
+	overflow: visible;
+	border-bottom: 2px solid orange;
+}
+
+.title {
+	float: left;
+	text-align: center;
+	border: 2px solid orange;
+	overflow: hidden;
+	margin: 1em;
+	position: absolute;
+	z-index: 3;
+}
+
+.title img {
+	position: relative;
+	height: 250px;
+	width: auto;
+	vertical-align: middle;
+}
+
+.navbar {
+	position: relative;
+	text-align: center;
+	width: auto;
+	height: 80%;
+	float: right;
+	margin-right: 2em;
+	background-color: #000030;
+}
+
+#top-nav {
+	position: relative;
+}
+
+#bottom-nav {
+	margin-bottom: none;
+}
+
+.navbar li {
+	display: inline-block;
+	padding: 1em 1em 0 1em;
+	
+}
+
+button {
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	background-color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+
+	-o-transition:5s;
+	-ms-transition:5s;
+	-moz-transition:5s;
+	-webkit-transition:5s;
+}
+
+button:hover {
+	cursor: pointer;
+	color: orange;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.body {
+	background-color: orange;
+	height: 80%;
+	position: relative;
+	
+
+}
+
+.sidebar {
+	min-height: 100%;
+	float: left;
+	width: 15%;
+	background-color: #000030;
+	text-align: center;
+	padding-top: 200px;
+	border-right: 2px solid orange;
+	z-index: 2;
+	position: absolute;
+}
+
+.sidebar ul {
+	min-width: 100%;
+	/*padding-left: -1em;*/
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	/*-webkit-margin-after: 1em;*/
+	-webkit-margin-start: 0;
+	-moz-margin-start: 0;
+	-webkit-margin-end: 0;
+	-moz-margin-end: 0;
+	-webkit-padding-start: 0;
+	-moz-padding-start: 0;
+}
+
+.sidebar li {
+	min-width: 100%;
+	display: block;
+	
+	font-size: 1.5em;
+	line-height: 3em;
+	position: relative;
+
+}
+
+.main {
+	min-height: 100%;
+	text-align: center;
+	float: right;
+	width: 85%;
+
+	vertical-align: middle;
+	background-image: url(http://zachpflederer.com/images/illini-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+
+}
+
+.welcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.5em;
+	margin-left: -12em;
+	height: 7em;
+	width: 24em;
+	border: 8px solid #000060;
+	background-color: orange;
+	border-radius: 1em;
+}
+
+.footer {
+	height: 10%;
+	border-top: 2px solid orange;
+}
+
+.bottom-pull-left {
+	position: relative;
+	text-align: center;
+	width: 20%;
+	height: 80%;
+	float: left;
+	margin: 2em 2em 2em auto;
+	background-color: #000030;
+	color: #000050;
+
+	-o-transition:5s;
+	-ms-transition:5s;
+	-moz-transition:5s;
+	-webkit-transition:5s;
+
+}
+
+.bottom-pull-left:hover {
+	color: orange;
+}
+
+
+
+
+/*Video Popup CSS*/
+
+.popup {
+	overflow: hidden;
+	border: 25px solid #000030;
+	/*outline: 2px solid #303030;*/
+	/*outline-radius: 32px;*/
+	border-radius: 32px;
+
+	background-color: black;
+	
+	position: absolute;
+	width: 704px;
+
+	left: 50%;
+	top: 50%;
+	margin:-200px 0 0 -352px;
+
+}
+
+.video {
+
+	display: block;
+
+	margin: auto;
+
+	border-radius: 32px;
+	height: 400px;
+	width: 704px;
+}
+/*
+.exit-btn {
+	position: relative;
+	color: white;
+	background-color: #000030;
+	height: 25px;
+	min-width: 704px;
+	text-align: center;
+}
+*/
+.popup, .video {
+	z-index: 5;
+
+}

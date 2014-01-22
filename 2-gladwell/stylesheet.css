@@ -1,0 +1,301 @@
+html {
+    
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-color: #e3e5f0;
+}
+
+* {
+    /*border: 1px gray solid;*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: none;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #e3e5f0
+}
+
+footer, header, nav, section {
+    display: block
+}
+
+.container {
+    min-height: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    clear: both;
+    overflow: hidden;
+}
+
+footer {
+    clear: both;
+}
+
+button, input {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: normal
+}
+
+/*Top bar, header*/
+
+.navbar {
+    background-color: #45555f;
+    min-height: 5em;
+    z-index: 1;
+    min-width: 100%;
+}
+
+nav {
+    position: relative;
+    height: 72px;
+}
+
+ul {
+
+    list-style-type:none;
+    height: inherit;
+    line-height: 3em;
+}
+
+li {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.logo {
+    vertical-align: middle;
+    position: relative;
+    float: left;
+    height: 72px;
+    margin-top: -1.2em;
+    margin-left: -2em;
+}
+
+#logo-box {
+    height: 3.2em;
+    width: 3.2em;
+
+    position: relative;
+    background-color: white;
+
+    border-radius: .3em;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+}
+
+#logo-image /*matchstick*/ {
+    height: 100%;
+    width: auto;
+    padding-left: .5em;
+}
+
+.gladwell {
+    position: relative;
+    letter-spacing: .1em;
+    margin-left: .3em;
+    float: right;
+    color: white;
+    font-size: 2.2em;
+    font-weight: bolder;
+    text-shadow: 0 1px 0 #fff;
+
+}
+
+.right-nav li {
+    vertical-align: middle;
+    padding-left: 2em;
+    letter-spacing: .1em;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+/*Content*/
+
+.home-intro {
+
+    margin: none;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+
+    padding: 2em 0 2em 0;
+}
+
+#background-image {
+    background-image: url(http://zachpflederer.com/gladwell/Malcolm_Gladwell.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 100%;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    
+    /* Set up positioning */
+    position: relative;
+    top: 0;
+    left: 0;
+
+    clear: none;
+}
+
+.left-box {
+    position: relative;
+    float: left;
+}
+    
+.left-box .tagline {
+    font-size: 3em;
+    letter-spacing: -.05em;
+    font-weight: bold;
+}
+
+.left-box .pitch {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding: 1em 0 1em 0;
+}
+
+.left-box form {
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);*/
+    line-height: 2em;
+    position: relative;
+    border: none;
+}
+
+.left-box form input {
+    clear: both;
+    display: block;
+    overflow: scroll;
+    width: 75%;
+}
+
+.left-box form button {
+    margin: 1em 0 1em 0;
+    font-size: 1.2em;
+
+    font-weight: 700;
+    letter-spacing: -.05em;
+    padding: .4em 1.2em .4em 1.2em;
+    color: white;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: blue;
+    background:#4C606D;
+    background:-ms-linear-gradient(top, #596e7a 0%, #4c606d 100%);
+    background:-moz-linear-gradient(top, #596e7a 0%, #4c606d 100%);
+    background:-o-linear-gradient(top, #596e7a 0%, #4c606d 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #596e7a), color-stop(1, #4c606d));
+    background:-webkit-linear-gradient(top, #596e7a 0%, #4c606d 100%);
+    background:linear-gradient(to bottom, #596e7a 0%,#4c606d 100%);
+}
+
+
+.btn:hover {
+    background:#45555F
+}
+
+
+.feedback {
+    position: relative;
+    width: 25%;
+    float: right;
+    color: #45555f;
+    word-wrap: break-word;
+    background-color: rgba(255,255,255,0.4);
+    text-shadow: none;
+    border-radius: .12em;
+    padding: 0 .8em 0 1em;
+    line-height: 1.5em;
+
+    
+}
+
+
+
+
+
+.steps {
+    display: inline-block;
+    clear: both;
+    color: #592C35;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 4em 0 4em 0;
+}
+
+.span4 {
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+    vertical-align: top;
+}
+
+.steps .step {
+    color: #fff;
+    margin: 1em;
+
+    font-size: 2em;
+    background: #592C35;
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    float: left;
+}
+
+.steps h2 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.steps p {
+    color: #595050;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    clear: both;
+    padding-left: 7em;
+}

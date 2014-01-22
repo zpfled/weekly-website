@@ -1,0 +1,145 @@
+
+/*Light Gray outline for each element. Comment out upon publishing!!*/
+
+* {
+	/*border: 1px solid lightGray;*/
+}
+
+/*Main Divs: Header, Center, and (opt)Footer*/
+
+#header {
+	background-color: #009090;
+	height: 3em;
+	width: full;
+	margin: none;
+	/*border-radius: 1em;*/
+
+}
+
+
+#center {
+	
+	position: relative;
+	margin: auto;
+	clear: both;
+
+}
+
+
+/*Default Settings*/
+html {
+	background-color: #faf8f8;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+div {
+	background-color: #faf8f8;
+}
+
+/*Header Elements*/
+
+#gravatar_image {
+	height: 1.1em;
+	width: 1.1em;
+	border-radius: 100%;
+	border: 2px solid orange;
+	float: left;
+	clear: right;	
+	margin-right: .5em;
+}
+
+h3 {
+	color: #faf8f8;
+	font-size: 2em;
+	clear: right;
+	float: left;
+	padding-left: .5em;
+	display: inline;
+	margin-top: .15em;
+	font-style: italic;
+}
+
+ul {
+	float: right;
+
+}
+
+.navbar li {
+	display: inline;
+	color: #cfffff;
+	padding-right: 1.5em;
+	font-size: 1em;
+}
+
+/*Body Elements*/
+
+.text_box {
+	width: 75%;
+	vertical-align: auto;
+	margin: 8em auto auto auto;
+	position: static;
+}
+
+.text_box div {
+	position: relative;
+	width: 49.4%;
+
+}
+.text_box h4 {
+	font-size: 2em;
+	font-style: italic;
+	font-weight: 200;
+	color: #faf8f8;
+	padding-left: 1em;
+}
+
+span {
+	background-color: orange;
+	border-radius: 1em;
+	padding-left: .2em;
+	padding-right: .2em;
+
+}
+
+.text_box p {
+	color: #009090;
+	padding-left: 2em;
+}
+
+.text_box a {
+	color: #009090;
+}
+
+.text_box a:hover {
+	color: orange;
+}
+
+#left {
+	float: left;
+	clear: left;
+	border-right: .2em solid orange;
+
+}
+
+#right {
+	float: right;
+	clear: right;
+	border-left: .2em solid #009090;
+}
+
+li {
+	color: #009090;
+	text-indent: 1em;
+	padding-right: 3em;
+}
+
+
+/*Links*/
+
+a {
+	text-decoration: none;
+	color: #faf8f8;
+}
