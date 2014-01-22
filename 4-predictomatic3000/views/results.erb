@@ -1,0 +1,19 @@
+<div class="results-header">  
+  <h1>Predictions</h1>
+  
+</div>  
+  
+<% @notes.each do |note| %>  
+  <article <%= 'class="complete"' if note.complete %>>  
+    <span>
+      <p>  
+        <a href="/<%= note.id %>/user"><%= note.content %></a> thinks that <a href="/<%= note.id %>/player"><%= note.player %></a> will go to <%= note.school %>.<br>
+        <span><a href="/<%= note.id %>">[edit your prediction]</a></span>  
+      </p>  
+      <p class="correct">  
+        <a href="/<%= note.id %>/complete" <%= 'style="visibility:hidden"' if note.complete %>>mark as correct</a>  
+      </p>  
+      <p class="meta">Date Predicted: <%= note.created_at %></p>
+    </span>
+  </article>  
+<% end %>

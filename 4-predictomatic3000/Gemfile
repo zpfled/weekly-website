@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+ruby "2.0.0"
+gem 'sinatra', '1.1.0'
+gem 'data_mapper'
+gem 'pg', '0.17.1'
+gem 'dm-postgres-adapter'
+# gem 'dm-sqlite-adapter'

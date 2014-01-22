@@ -1,0 +1,38 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf8">  
+  <title><%= @title + ' | Predictomatic 3000' %></title>  
+  <link href="/reset.css" rel="stylesheet">  
+  <link href="/style.css" rel="stylesheet">
+  <!-- <script src="/predictomatic.js"></script> -->
+</head>  
+<body>  
+  <header>  
+    <hgroup>  
+      <h1 class="title"><a href="/">Predictomatic 3000</a></h1>  
+      <h2 class="subtitle">- where Illini dreams come true -</h2>  
+    </hgroup>  
+  </header>  
+  
+  <div id="main">  
+    <%= yield %>  
+  </div>  
+  
+  <footer>  
+    <div class="pull-left">
+      <ul>
+        <li><a href="/results">view all predictions</a></li>
+      </ul>
+    </div>
+    <div class="pull-right">
+      <ul class="navbar">
+        <li><a href="http://zachpflederer.com">Weekly Website</a></li>
+        <li><a href="http://zachpflederer.tumblr.com">Blog</a></li>
+        <li><a href="https://twitter.com/zachpflederer">Twitter</a></li>
+        <li><a href="https://github.com/zpfled">Github</a></li>
+      </ul>
+    </div>
+  </footer>  
+</body>  
+</html> 

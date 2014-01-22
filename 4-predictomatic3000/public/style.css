@@ -1,0 +1,166 @@
+* {
+    font-family: Helvetica, Arial;
+}
+
+body {  
+    margin: 35px auto;  
+    width: 80%;  
+}  
+
+header {  
+    text-align: center;
+    margin-top: 200px;
+}  
+  
+header h1 {  
+    display: inline;  
+    font-size: 64px;
+    color: #303090
+}  
+  
+header h1 a:link, header h1 a:visited {  
+    color: #444;  
+    text-decoration: none;  
+}  
+  
+header h2 {  
+    font-size: 24px;  
+    font-style: italic;  
+    color: orange;  
+}  
+  
+#main {  
+    margin: 32px 0 32px 0;
+}  
+  
+#add {  
+    margin: 0 0 20px;  
+}
+
+textarea {
+    resize: none;
+}
+
+#add textarea {  
+    height: 1.2em;  
+    width: auto;  
+    padding: 0 .5em 0 .5em;  
+    border: none;  
+}  
+  
+#sharpie {  
+    font-size: 40px;
+    color: black;
+    height: 116px;  
+    width: 287px;  
+    margin: none;
+    padding: 1em 1em 1.8em 1em;
+    vertical-align: middle;  
+    border: none;  
+    background-image: url(/isolated-circle.png), url(http://cdn.dmad.com/wp-content/uploads/2012/09/isolated-circle.png);
+    background-size: cover;
+    background-repeat: none;
+    background-color: white;
+}  
+  
+#edit textarea {  
+    height: 30px;  
+    width: 480px;  
+    padding: 10px;  
+    border: 1px solid #ddd;  
+}  
+  
+#edit input[type=submit] {  
+    height: 50px;  
+    width: 100px;  
+    margin: -50px 0 0;  
+    border: 1px solid #ddd;  
+    background: white;  
+}  
+  
+#edit input[type=checkbox] {  
+    height: 50px;  
+    width: 20px;  
+}  
+ 
+form {
+    position: relative;
+}
+
+.form-instructions {
+    display: inline-block;
+    font-size: 32px;
+    position: relative;
+}
+article {  
+    border: 1px solid #eee;  
+    border-top: none;  
+    padding: 15px 10px;  
+}  
+  
+article:first-of-type {  
+    border: 1px solid #eee;  
+}  
+  
+article:nth-child(even) {  
+    background: #fafafa;  
+}  
+  
+article.complete {  
+    background: #C5E3BF;  
+}  
+  
+article span {  
+    font-size: 0.8em;  
+}  
+  
+p {  
+    margin: 0 0 5px;  
+}  
+  
+.meta {  
+    font-size: 0.8em;  
+    font-style: italic;  
+    color: #888;  
+}  
+  
+.links {  
+    font-size: 1.8em;  
+    line-height: 0.8em;  
+    float: rightright;  
+    margin: -10px 0 0;  
+}  
+  
+.links a {  
+    display: block;  
+    text-decoration: none;  
+}
+
+ul {
+    margin: 3em 0 0 0;
+}
+
+li {
+    display: inline;
+    padding: 1em 1em 1em 1em;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.left-block {
+    max-width: 800px;
+}

@@ -1,0 +1,14 @@
+<% if @note %>  
+  <form action="/<%= @note.id %>" method="post" id="edit">  
+    <input type="hidden" name="_method" value="put">  
+    <h3><%= @note.content %></h3>
+    <p>now thinks that</p>
+    <textarea name="player" placeholder="<%= @note.player %>"></textarea>
+    <p>will attend</p>
+    <textarea name="school" placeholder="not <%= @note.school %>, but ..."></textarea>  
+    <input type="checkbox" name="complete" <%= "checked" if @note.complete %>>  
+    <input type="submit">  
+  </form>  
+<% else %>  
+  <p>Prediction not found.</p>  
+<% end %> 

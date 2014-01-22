@@ -1,0 +1,21 @@
+<h3><a href="/results">back to all predictions</a></h3>
+<h3>
+	<%= @notes.select { |x| x.player == @note.player }.length %> total predictions for <%= @note.player %><br>
+	<% small = @notes.select { |x| x.player == @note.player && x.school == 'Illinois' }.length %>
+	<% big = @notes.select { |x| x.player == @note.player }.length %>
+	<%= ((small * 100) / big) %>% for Illinois.
+</h3>
+<% @notes.select { |x| x.player == @note.player }.each do |note| %>  
+  <article <%= 'class="complete"' if note.complete %>>  
+    <span>
+      <p>  
+        <a href="/<%= note.id %>/user"><%= note.content %></a> thinks that <a href="/<%= note.id %>/player"><%= note.player %></a> will go to <%= note.school %>.<br>
+        <span><a href="/<%= note.id %>">[edit your prediction]</a></span>  
+      </p>  
+      <p class="correct">  
+        <a href="/<%= note.id %>/complete" <%= 'style="visibility:hidden"' if note.complete %>>mark as correct</a>  
+      </p>  
+      <p class="meta">Date Predicted: <%= note.created_at %></p>
+    </span>
+  </article>  
+<% end %>

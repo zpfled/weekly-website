@@ -1,0 +1,519 @@
+# Logfile created on 2014-01-06 19:49:56 -0600 by logger.rb/41954
+I, [2014-01-06T19:49:56.451518 #15940]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-06T19:49:59.022545 #15940]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-06T19:50:05.763357 #15940]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-06T19:50:06.769981 #15940]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-06T19:50:07.816105 #15940]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-06T19:50:08.971810 #15940]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-06T19:50:10.723055 #15940]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-06T19:50:13.162849 #15940]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-06T19:50:14.304011 #15940]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-06T19:50:14.962668 #15940]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-06T19:50:17.047991 #15940]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-06T19:50:17.955105 #15940]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-06T19:50:18.756945 #15940]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-06T19:50:20.925767 #15940]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-06T19:50:22.150414 #15940]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-06T19:50:23.228822 #15940]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-06T19:50:25.696221 #15940]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-06T19:50:27.049747 #15940]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+I, [2014-01-06T19:50:28.877929 #15940]  INFO -- : 0:  data_objects (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_objects-0.10.13.gemspec
+I, [2014-01-06T19:50:29.587836 #15940]  INFO -- : 0:  dm-do-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-do-adapter-1.2.0.gemspec
+E, [2014-01-06T19:50:30.740475 #15940] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb 
+checking for main() in -lpq... yes
+checking for libpq-fe.h... no
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pgsql-server-dir
+	--without-pgsql-server-dir
+	--with-pgsql-server-include
+	--without-pgsql-server-include=${pgsql-server-dir}/include
+	--with-pgsql-server-lib
+	--without-pgsql-server-lib=${pgsql-server-dir}/
+	--with-pgsql-client-dir
+	--without-pgsql-client-dir
+	--with-pgsql-client-include
+	--without-pgsql-client-include=${pgsql-client-dir}/include
+	--with-pgsql-client-lib
+	--without-pgsql-client-lib=${pgsql-client-dir}/
+	--with-pqlib
+	--without-pqlib
+Could not find PostgreSQL build environment (libraries & headers): Makefile not created
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/do_postgres-0.10.13 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/do_postgres-0.10.13/ext/do_postgres/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-06T19:51:33.832973 #16192]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-06T19:51:33.833449 #16192]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-06T19:51:33.833912 #16192]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-06T19:51:33.834254 #16192]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-06T19:51:33.834615 #16192]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-06T19:51:33.834953 #16192]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-06T19:51:33.835268 #16192]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-06T19:51:33.835654 #16192]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-06T19:51:33.835981 #16192]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-06T19:51:33.836291 #16192]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-06T19:51:33.836606 #16192]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-06T19:51:33.836956 #16192]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-06T19:51:33.837341 #16192]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-06T19:51:33.837660 #16192]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-06T19:51:33.837984 #16192]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-06T19:51:33.838299 #16192]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-06T19:51:33.853797 #16192]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-06T19:51:33.854222 #16192]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-06T19:51:37.079080 #16192] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb 
+checking for pg_config... no
+No pg_config... trying anyway. If building fails, please try again with
+ --with-pg-config=/path/to/pg_config
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--without-pg-config
+	--with-pg_config
+	--without-pg_config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-06T19:52:21.870501 #16207]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-06T19:52:21.870961 #16207]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-06T19:52:21.871276 #16207]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-06T19:52:21.871595 #16207]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-06T19:52:21.871893 #16207]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-06T19:52:21.872185 #16207]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-06T19:52:21.872483 #16207]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-06T19:52:21.872785 #16207]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-06T19:52:21.873070 #16207]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-06T19:52:21.873359 #16207]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-06T19:52:21.873646 #16207]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-06T19:52:21.873932 #16207]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-06T19:52:21.874218 #16207]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-06T19:52:21.874507 #16207]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-06T19:52:21.874798 #16207]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-06T19:52:21.875091 #16207]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-06T19:52:21.875382 #16207]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-06T19:52:21.875698 #16207]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+I, [2014-01-06T19:52:25.239003 #16207]  INFO -- : 0:  rack (1.5.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-06T19:52:26.473446 #16207]  INFO -- : 0:  tilt (1.4.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-06T19:52:27.393223 #16207]  INFO -- : 0:  sinatra (1.1.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.1.0.gemspec
+I, [2014-01-06T19:52:27.393737 #16207]  INFO -- : 0:  bundler (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
+I, [2014-01-06T20:18:37.078721 #16592]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-06T20:18:37.079675 #16592]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-06T20:18:37.080119 #16592]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-06T20:18:37.080517 #16592]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-06T20:18:37.080834 #16592]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-06T20:18:37.081136 #16592]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-06T20:18:37.081438 #16592]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-06T20:18:37.081749 #16592]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-06T20:18:37.082042 #16592]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-06T20:18:37.082337 #16592]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-06T20:18:37.082634 #16592]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-06T20:18:37.082930 #16592]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-06T20:18:37.083225 #16592]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-06T20:18:37.083520 #16592]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-06T20:18:37.083809 #16592]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-06T20:18:37.084093 #16592]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-06T20:18:37.084379 #16592]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-06T20:18:37.084683 #16592]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-06T20:18:37.877895 #16592] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb 
+checking for pg_config... no
+No pg_config... trying anyway. If building fails, please try again with
+ --with-pg-config=/path/to/pg_config
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--without-pg-config
+	--with-pg_config
+	--without-pg_config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-06T20:31:49.151711 #17144]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-06T20:31:49.154018 #17144]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-06T20:31:49.154522 #17144]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-06T20:31:49.155028 #17144]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-06T20:31:49.155555 #17144]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-06T20:31:49.156045 #17144]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-06T20:31:49.156372 #17144]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-06T20:31:49.156683 #17144]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-06T20:31:49.156994 #17144]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-06T20:31:49.157300 #17144]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-06T20:31:49.157590 #17144]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-06T20:31:49.157880 #17144]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-06T20:31:49.158169 #17144]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-06T20:31:49.158457 #17144]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-06T20:31:49.158748 #17144]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-06T20:31:49.159035 #17144]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-06T20:31:49.159321 #17144]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-06T20:31:49.159608 #17144]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-06T20:31:49.531937 #17144] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb --with-pg-config=/usr/pgsql-9.1/bin/pg_config
+Using config values from /usr/pgsql-9.1/bin/pg_config
+sh: /usr/pgsql-9.1/bin/pg_config: No such file or directory
+sh: /usr/pgsql-9.1/bin/pg_config: No such file or directory
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-07T09:30:01.637186 #22960]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T09:30:01.638649 #22960]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T09:30:01.639240 #22960]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T09:30:01.639766 #22960]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T09:30:01.640285 #22960]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T09:30:01.640796 #22960]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T09:30:01.641315 #22960]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T09:30:01.641754 #22960]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T09:30:01.642147 #22960]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T09:30:01.642546 #22960]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T09:30:01.642944 #22960]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T09:30:01.643365 #22960]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T09:30:01.644110 #22960]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T09:30:01.644650 #22960]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T09:30:01.645103 #22960]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T09:30:01.645646 #22960]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T09:30:01.646021 #22960]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T09:30:01.646338 #22960]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-07T09:30:02.090500 #22960] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb --with-pg-config=/Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+Using config values from /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-07T09:45:29.261387 #23072]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T09:45:29.262446 #23072]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T09:45:29.262792 #23072]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T09:45:29.263104 #23072]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T09:45:29.263407 #23072]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T09:45:29.264254 #23072]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T09:45:29.264620 #23072]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T09:45:29.264983 #23072]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T09:45:29.265346 #23072]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T09:45:29.265704 #23072]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T09:45:29.266068 #23072]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T09:45:29.266431 #23072]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T09:45:29.266790 #23072]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T09:45:29.267148 #23072]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T09:45:29.267502 #23072]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T09:45:29.267860 #23072]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T09:45:29.268221 #23072]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T09:45:29.268667 #23072]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-07T09:45:30.143274 #23072] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb --with-pg-config=/Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+Using config values from /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-07T09:48:00.362425 #23094]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T09:48:00.362850 #23094]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T09:48:00.363169 #23094]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T09:48:00.363474 #23094]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T09:48:00.363775 #23094]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T09:48:00.364069 #23094]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T09:48:00.364361 #23094]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T09:48:00.364661 #23094]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T09:48:00.364950 #23094]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T09:48:00.365238 #23094]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T09:48:00.365527 #23094]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T09:48:00.365816 #23094]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T09:48:00.366108 #23094]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T09:48:00.366403 #23094]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T09:48:00.366690 #23094]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T09:48:00.366975 #23094]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T09:48:00.367260 #23094]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T09:48:00.367547 #23094]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+E, [2014-01-07T09:48:00.712065 #23094] ERROR -- : Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby extconf.rb --with-pg-config=/Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+Using config values from /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+sh: /Applications/Postgres.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin:/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin:/Users/zpfled/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zpfled/rails_projects:/usr/local/git/bin: No such file or directory
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/bin/ruby
+	--with-pg
+	--without-pg
+	--with-pg-config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/
+
+
+Gem files will remain installed in /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1 for inspection.
+Results logged to /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/gems/pg-0.17.1/ext/gem_make.out
+
+/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:77:in `run'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:39:in `block in build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/tempfile.rb:324:in `open'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/ext_conf_builder.rb:19:in `build'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:148:in `block (2 levels) in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `chdir'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:147:in `block in build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `synchronize'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:146:in `build_extension'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:180:in `block in build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/ext/builder.rb:177:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:667:in `build_extensions'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/installer.rb:225:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/forwardable.rb:171:in `each'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `load'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/bin/bundle:23:in `<main>'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'  \n/Users/zpfled/.rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-01-07T09:49:07.576548 #23113]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T09:49:07.576972 #23113]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T09:49:07.577291 #23113]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T09:49:07.577589 #23113]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T09:49:07.577892 #23113]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T09:49:07.578186 #23113]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T09:49:07.578485 #23113]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T09:49:07.578787 #23113]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T09:49:07.579429 #23113]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T09:49:07.579712 #23113]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T09:49:07.580011 #23113]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T09:49:07.580298 #23113]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T09:49:07.580604 #23113]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T09:49:07.580896 #23113]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T09:49:07.581194 #23113]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T09:49:07.581480 #23113]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T09:49:07.581766 #23113]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T09:49:07.582054 #23113]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+I, [2014-01-07T09:49:12.936486 #23113]  INFO -- : 0:  pg (0.17.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/pg-0.17.1.gemspec
+I, [2014-01-07T09:49:12.937124 #23113]  INFO -- : 0:  rack (1.5.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-07T09:49:12.937541 #23113]  INFO -- : 0:  tilt (1.4.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-07T09:49:12.937936 #23113]  INFO -- : 0:  sinatra (1.1.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.1.0.gemspec
+I, [2014-01-07T09:49:12.938312 #23113]  INFO -- : 0:  bundler (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
+I, [2014-01-07T10:08:58.147456 #23592]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T10:08:58.147894 #23592]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T10:08:58.148218 #23592]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T10:08:58.148532 #23592]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T10:08:58.148836 #23592]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T10:08:58.149139 #23592]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T10:08:58.149430 #23592]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T10:08:58.149727 #23592]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T10:08:58.150014 #23592]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T10:08:58.150298 #23592]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T10:08:58.150588 #23592]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T10:08:58.150931 #23592]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T10:08:58.151220 #23592]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T10:08:58.151506 #23592]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T10:08:58.151791 #23592]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T10:08:58.152083 #23592]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T10:08:58.152461 #23592]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T10:08:58.152830 #23592]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+I, [2014-01-07T10:08:58.153157 #23592]  INFO -- : 0:  data_objects (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_objects-0.10.13.gemspec
+I, [2014-01-07T10:08:58.153491 #23592]  INFO -- : 0:  dm-do-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-do-adapter-1.2.0.gemspec
+I, [2014-01-07T10:09:00.440329 #23592]  INFO -- : 0:  do_postgres (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/do_postgres-0.10.13.gemspec
+I, [2014-01-07T10:09:01.034064 #23592]  INFO -- : 0:  dm-postgres-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-postgres-adapter-1.2.0.gemspec
+I, [2014-01-07T10:09:03.405668 #23592]  INFO -- : 0:  do_sqlite3 (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/do_sqlite3-0.10.13.gemspec
+I, [2014-01-07T10:09:04.035753 #23592]  INFO -- : 0:  dm-sqlite-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-sqlite-adapter-1.2.0.gemspec
+I, [2014-01-07T10:09:04.036224 #23592]  INFO -- : 0:  pg (0.17.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/pg-0.17.1.gemspec
+I, [2014-01-07T10:09:04.036562 #23592]  INFO -- : 0:  rack (1.5.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-07T10:09:04.036891 #23592]  INFO -- : 0:  tilt (1.4.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-07T10:09:04.037212 #23592]  INFO -- : 0:  sinatra (1.1.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.1.0.gemspec
+I, [2014-01-07T10:09:04.037521 #23592]  INFO -- : 0:  bundler (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
+I, [2014-01-07T10:11:36.935427 #23842]  INFO -- : 0:  addressable (2.3.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/addressable-2.3.5.gemspec
+I, [2014-01-07T10:11:36.935919 #23842]  INFO -- : 0:  bcrypt-ruby (3.1.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/bcrypt-ruby-3.1.2.gemspec
+I, [2014-01-07T10:11:36.936310 #23842]  INFO -- : 0:  dm-core (1.2.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-core-1.2.1.gemspec
+I, [2014-01-07T10:11:36.936698 #23842]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-01-07T10:11:36.937082 #23842]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-01-07T10:11:36.937440 #23842]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-01-07T10:11:36.937816 #23842]  INFO -- : 0:  fastercsv (1.5.5) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/fastercsv-1.5.5.gemspec
+I, [2014-01-07T10:11:36.938202 #23842]  INFO -- : 0:  json (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json-1.8.1.gemspec
+I, [2014-01-07T10:11:36.938577 #23842]  INFO -- : 0:  json_pure (1.8.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/json_pure-1.8.1.gemspec
+I, [2014-01-07T10:11:36.938951 #23842]  INFO -- : 0:  multi_json (1.8.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/multi_json-1.8.2.gemspec
+I, [2014-01-07T10:11:36.939324 #23842]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-01-07T10:11:36.939682 #23842]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-01-07T10:11:36.940065 #23842]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-01-07T10:11:36.940458 #23842]  INFO -- : 0:  stringex (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/stringex-1.5.1.gemspec
+I, [2014-01-07T10:11:36.940991 #23842]  INFO -- : 0:  uuidtools (2.1.4) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/uuidtools-2.1.4.gemspec
+I, [2014-01-07T10:11:36.941659 #23842]  INFO -- : 0:  dm-types (1.2.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-types-1.2.2.gemspec
+I, [2014-01-07T10:11:36.942045 #23842]  INFO -- : 0:  dm-validations (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-validations-1.2.0.gemspec
+I, [2014-01-07T10:11:36.942628 #23842]  INFO -- : 0:  data_mapper (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_mapper-1.2.0.gemspec
+I, [2014-01-07T10:11:36.943000 #23842]  INFO -- : 0:  data_objects (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/data_objects-0.10.13.gemspec
+I, [2014-01-07T10:11:36.943326 #23842]  INFO -- : 0:  dm-do-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-do-adapter-1.2.0.gemspec
+I, [2014-01-07T10:11:36.943648 #23842]  INFO -- : 0:  do_postgres (0.10.13) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/do_postgres-0.10.13.gemspec
+I, [2014-01-07T10:11:36.943935 #23842]  INFO -- : 0:  dm-postgres-adapter (1.2.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/dm-postgres-adapter-1.2.0.gemspec
+I, [2014-01-07T10:11:36.944255 #23842]  INFO -- : 0:  pg (0.17.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/pg-0.17.1.gemspec
+I, [2014-01-07T10:11:36.944576 #23842]  INFO -- : 0:  rack (1.5.2) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-07T10:11:36.944855 #23842]  INFO -- : 0:  tilt (1.4.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-07T10:11:36.945171 #23842]  INFO -- : 0:  sinatra (1.1.0) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.1.0.gemspec
+I, [2014-01-07T10:11:36.945438 #23842]  INFO -- : 0:  bundler (1.5.1) from /Users/zpfled/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
