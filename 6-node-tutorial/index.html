@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Very Worst Chatroom</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/scripts.js"></script>
+	<script>
+		
+  		var server = io.connect();
+
+
+  		server.on('message', function(message) {
+  			insertMessage(message);
+  		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<section class="center-block">
+			<div class="title">
+				<h1>The Very Worst Chatroom</h1>
+			</div>
+			<div class="form-wrapper">
+				<textarea name="chat" type="text" onKeyDown="if (event.keyCode==13) { sendMessage(server, (this.value)) }" onKeyUp="if(event.keyCode==13 && this.value !== '') { this.value = ''; }" placeholder="type your message here..."></textarea>
+			</div>
+			<div class="console">
+				<ul>
+					<li><h1>... welcome ...</h1></li>
+					<li><p>... please wait a few moments for this garbage chatroom to warm up ...</p></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<section class="nav">
+		<div class="center">
+			<ul class="navbar">
+				<li><a href="http://zachpflederer.com">weekly_website</a></li>
+				<li><a href="http://zachpflederer.tumblr.com/">blog</a></li>
+				<li><a href="https://twitter.com/zachpflederer">twitter</a></li>
+				<li><a href="https://github.com/zpfled">github</a></li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>

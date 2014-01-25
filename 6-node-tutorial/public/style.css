@@ -1,0 +1,201 @@
+* {
+	/*border: 1px solid gray;*/
+}
+
+body {
+	margin: 0;
+	width: 100%;
+
+	background-color: #fefefe
+}
+
+.wrapper {
+	margin: inherit;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+
+	max-width: 100%;
+	height: 700px;
+}
+
+.center-block {
+	display: block;
+	height: 500px;
+	width: 1200px;
+
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -600px;
+
+	/*overflow: hidden;*/ /*uncomment this line*/
+}
+
+.title {
+	position: relative;
+
+	text-align: center;
+
+	max-height: 60px;
+
+}
+
+.title h1 {
+	position: relative;
+	/*line-height: 0px;*/
+	font-family: Georgia, serif;
+	font-size: 60px;
+	font-weight: 200;
+	letter-spacing: .25em;
+
+	margin: 0;
+}
+
+textarea {
+	height: 20px;
+	width: 600px;
+	overflow: scroll;
+	resize: none;
+
+	vertical-align: top;
+
+	border: 2px solid #666677;
+	background-color: #fff;
+	border-radius: .5em;
+}
+
+
+.console {
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+
+	margin-top: -75px;
+	margin-left: -550px;
+
+	width: 1100px;
+	height: 300px;
+	overflow: hidden;
+
+	text-align: center
+}
+
+.console ul {
+	height: inherit;
+	width: 1090px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
+	text-align: center;
+
+	padding: 0;
+	margin: auto;
+}
+
+.console li {
+	width: inherit;
+	display: block;
+	padding: 0 0 1em 0;
+	text-align: center;
+
+	font-family: "lucida console", "monaco", "andale mono", "bitstream vera sans mono", "consolas", monospace;
+}
+
+.form-wrapper {
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+
+	margin-top: -125px;
+	margin-left: -550px;
+
+	width: 1100px;
+	height: 100px;
+	overflow: hidden;
+
+	text-align: center
+}
+
+.nav {
+	overflow: hidden;
+	/*max-height: 70px;*/
+}
+
+.navbar {
+	width: inherit;
+	position: relative;
+	margin: 1em auto 1em auto;
+	padding: 1em;
+	/*border-top: 1px solid #53e6ee;*/
+	/*border-bottom: 1px solid #53e6ee;*/
+	background-color: #999; 
+	background: -webkit-gradient(linear, 100% 100%, 0 0, from(#666), to(#bbb));
+	background: -webkit-linear-gradient(bottom right, #666, #bbb);
+	background: -moz-linear-gradient(bottom right, #666, #bbb);
+	background: -o-linear-gradient(bottom right, #666, #bbb);
+	background: linear-gradient(bottom right, #666, #bbb);
+}
+
+.navbar:hover {
+	box-shadow: 0 0 10px blue; /*aquamarine*/
+}
+
+.navbar li {
+	display: inline-block;
+	padding: 0 .5em 0 .5em;
+
+	font-family: Georgia, serif;
+	color: #fefefe;
+	font-size: 1em;
+	font-weight: 200;
+	letter-spacing: .25em;
+}
+
+a {
+	text-decoration: none;
+	color: #fefefe;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.center {
+	position: relative;
+	text-align: center;
+	margin: auto;
+
+	clear: both;
+}
+
+textarea:focus {
+	outline: none;
+	background-color: #fff8e9;
+	-moz-box-shadow:    0 0 8px #bbb;
+	-webkit-box-shadow: 0 0 8px #bbb;
+	box-shadow:         0 0 8px #bbb;
+} 
+
+a:focus, li:focus {
+	outline: none;
+	border: none;
+	text-decoration: underline;
+	color: #fff6d3;
+	/*font-size: 1.5em;*/
+	padding: 0;
+	margin: 0;
+}
