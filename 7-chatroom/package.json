@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "~3.4.8",
-    "ejs": "~0.8.5"
+    "ejs": "~0.8.5",
+    "events": "~1.0.0",
+    "request": "~2.33.0",
+    "socket.io": "~0.9.16",
+    "http": "0.0.0",
+    "url": "~0.7.9"
   }
 }
