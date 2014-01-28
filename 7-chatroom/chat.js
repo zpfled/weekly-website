@@ -1,14 +1,18 @@
-var request = require('request');
 var url = require('url');
 var express = require('express');
+var events = require('events');
+var EventEmitter = new events.EventEmitter();
+var port = process.env.PORT || 8080;
 var app = express(),
 	http = require('http'),
 	server = http.createServer(app),
 	io = require('socket.io').listen(server);
-var events = require('events');
-var EventEmitter = new events.EventEmitter();
+app.use(express.static('./public'));
+app.set('views', './views');
+app.engine('html', require('ejs').renderFile);
+app.use(express.bodyParser());
 
-var port = process.env.PORT || 8080;
+// Server
 
 io.set('log level', 1);
 
@@ -17,29 +21,34 @@ io.sockets.on('connection', function(client) {
 
 	client.on('message', function(message) {
 		io.sockets.emit('message', message);
-		// client.broadcast.emit('message', message);
-		console.log(message);
+		console.log(message.username + ' says: ' + message.content);
 	});
 
 
 });
 
-app.use(express.static('./public'));
-app.use(express.bodyParser());
 
+// Routes
 
 app.get('/', function(req, res) {
-	res.sendfile('./index.html');
+	// This is the gateway. User enters her username into a form, submits post request to '/' with username variable.
+	// I should sanitize this input.
+	res.render('index.html');
 	console.log('Requested home page');
 });
 
 app.post('/', function(req, res) {
-	var message = req.body.chat_input;
+	// This post request simply carries the username to the '/chat' page, where username variable is inserted into every message.
+	res.redirect('chat.html', { user: user });
+	res.end();
+});
 
-	console.log('You typed: "' + message +'"');
-	res.end(); //The message is created, but dies as soon as the response comes back.
+app.get('/chat', function(req, res) {
+	// This is where the chats actually happen.
+	res.render('chat.html', { user: user });
 });
 
 
 server.listen(port);
-console.log("Listening on port " + port + "...");
+console.log('This chatroom is live! And it\'s' );
+console.log("listening on port " + port + "...");

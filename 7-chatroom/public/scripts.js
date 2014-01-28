@@ -7,6 +7,9 @@ var insertMessage = function(message) {
 };
 
 
-function sendMessage(sender, message) {
+function sendMessage(sender, username, content) {
+	var message = {};
+	message.username = username;
+	message.content = content;
 	sender.emit('message', message);
 }

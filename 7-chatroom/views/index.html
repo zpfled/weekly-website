@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Very Worst Chatroom</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/scripts.js"></script>
+	<script src="/date-format.js"></script>
+	<script>
+		var server = io.connect();
+
+		server.on('message', function(message) {
+			var time = new Date().format('h:i:s');
+  			insertMessage("(" + time + ") " + message.username + " says:" + "<br>" + message.content);
+  		});
+		
+		// This whole function will be pretty obsolete if I follow through with the plan to have a gateway form that users submit upon visiting the site.
+		$(function() {
+			$('.error').hide();
+			$('.content').keydown(function() {
+				if (event.keyCode==13) {
+      				$('.error').hide();
+      				var name = $(".username").val();
+        			if (name == "") {
+      					$("label#username_error").show();
+      					$(".username").focus();
+      					return false;
+    				}
+        			
+        			var content = $(".content").val();
+        			if (content == "") {
+      					$("label#content_error").show();
+      					$(".content").focus();
+      					return false;
+    				} else {
+    					sendMessage(server, (document.getElementById('username').value), (this.value))
+    				}
+    			}
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<section class="center-block">
+			<div class="title">
+				<h1>The Very Worst Chatroom</h1>
+			</div>
+			<div class="form-wrapper"> 
+				<input type="text" name="username" id="username" class="username" placeholder="enter username here">
+				<label id="username_error" class="error" for="username">You must enter a username to chat.</label>
+				<textarea class="content" name="content" type="text" onKeyUp="if(event.keyCode==13 && this.value !== '') {this.value = '';}" placeholder="type your message here..."></textarea>
+				<label id="content_error" class="error" for="content">Don't just say nothing.</label>
+			</div>
+			<div class="console">
+				<ul>
+					<li><h1>... welcome ...</h1></li>
+					<li><p>... please wait a few moments for this garbage chatroom to warm up ...</p></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<section class="nav">
+		<div class="center">
+			<ul class="navbar">
+				<li><a href="http://zachpflederer.com">weekly_website</a></li>
+				<li><a href="http://zachpflederer.tumblr.com/">blog</a></li>
+				<li><a href="https://twitter.com/zachpflederer">twitter</a></li>
+				<li><a href="https://github.com/zpfled">github</a></li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- onKeyDown="if (event.keyCode==13) { }" -->
+
+

@@ -54,7 +54,7 @@ body {
 	margin: 0;
 }
 
-textarea {
+textarea, input {
 	height: 20px;
 	width: 600px;
 	overflow: scroll;
@@ -182,7 +182,7 @@ a:hover {
 	clear: both;
 }
 
-textarea:focus {
+textarea:focus, input:focus {
 	outline: none;
 	background-color: #fff8e9;
 	-moz-box-shadow:    0 0 8px #bbb;
