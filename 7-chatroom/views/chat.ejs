@@ -1,0 +1,28 @@
+<script>window.onUnload = leaveRoom(server, handle, chatroom);</script>
+<div class="container">
+	<div class="wrapper">
+		<div class="title">
+			<img class="title-img" src="/<%= title %>.jpg" alt="title-picture">
+		</div>
+		<div class="wrapper2">
+			<div class="pull-left">
+				<div class="users">
+					<h3 class="chat-title">The <%= title %> <br>Room</h3>
+				</div>
+			</div>
+			<div class="pull-right">
+				<div class="pull-left">
+					<div class="console">
+						<ul name="chat">
+							<li><h3>... welcome ...</h3></li>
+						</ul>
+						<div class="form-wrapper">
+							<input class="name readonly-input" type="text" name="name" id="name" readonly>
+							<textarea class="content" name="content" type="text" onKeyUp="if(event.keyCode==13 && this.value !== '') {this.value = '';}" placeholder="type your message here..."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

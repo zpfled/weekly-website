@@ -1,0 +1,114 @@
+<!-- 
+I need to build in a window that shows current active users.
+I need to use redis for that.
+I need to test out deployment with redis.
+I need to decide if I'm going to include mulitple chatrooms. 
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/font-awesome.min.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/scripts.js"></script>
+	<script src="/date-format.js"></script>
+	<script>
+
+	//App
+
+		var server = io.connect(window.location.origin, {
+			'sync disconnect on unload': true
+		});
+		var handle = <%- JSON.stringify(handle) %>;
+		var chatroom = <%- JSON.stringify(title) %>;
+		
+
+		server.on('connect', function(data) {
+			server.emit('join', handle, chatroom);
+		});
+
+		server.on('history', function(message) {
+			insertMessage(message);
+		});
+
+		server.on(chatroom, function(message) {
+			if (message.timestamp) {
+				insertMessage(message.timestamp + ": " + message.name + " says: " + message.content);
+				insertUser(message.name);
+			} else {
+				message.timestamp = new Date().format('h:i:s');
+				insertMessage(message.timestamp + ": " + message.name + " says: " + message.content);
+				insertUser(message.name);
+			}
+		});
+
+	// jQuery
+
+		$(function() {
+			$('.error').hide();
+			$('.content').keydown(function() {
+				if (event.keyCode==13) {
+      				$('.error').hide();
+      				var name = $(".name").val();
+        			if (name == "") {
+      					$("label#name_error").show();
+      					$(".name").focus();
+      					return false;
+    				}
+        			
+        			var content = $(".content").val();
+        			if (content == "") {
+      					$("label#content_error").show();
+      					$(".content").focus();
+      					return false;
+    				} else {
+    					timestamp = new Date().format('h:i:s');
+    					sendMessage(server, chatroom, timestamp, (document.getElementById('name').value), (this.value));
+    				}
+    			}
+			});
+		});
+
+		$(function() {
+			if (handle) {
+				$('.name').val(handle);
+			} else {
+				$('.name').val('Anonymous');
+			}
+			$('.content').focus();
+		});
+
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://zachpflederer.com">weekly_website</a></li>
+				<li><a href="http://zachpflederer.tumblr.com/">blog</a></li>
+				<li><a href="https://twitter.com/zachpflederer">twitter</a></li>
+				<li><a href="https://github.com/zpfled">github</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<%- body %>
+
+</body>
+</html>

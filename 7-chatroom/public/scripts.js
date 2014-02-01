@@ -1,15 +1,15 @@
-var insertMessage = function(message) {
+function insertMessage(message) {
 	var newMessage = document.createElement('li');
 	newMessage.innerHTML = message;
 
-	var messages = document.getElementsByTagName('ul')[0];
-			return messages.insertBefore(newMessage, messages.firstChild);
-};
+	var messages = document.getElementsByName('chat')[0];
+	return messages.insertBefore(newMessage, messages.firstChild);
+}
 
-
-function sendMessage(sender, username, content) {
+function sendMessage(sender, chatroom, timestamp, name, content) {
 	var message = {};
-	message.username = username;
+	message.timestamp = timestamp;
+	message.name = name;
 	message.content = content;
-	sender.emit('message', message);
+	sender.emit(chatroom, message);
 }

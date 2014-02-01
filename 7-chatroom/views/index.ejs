@@ -1,0 +1,54 @@
+<div class="container">
+	<ul id="chatrooms">
+		<li class="col-md-4 col-xs-6 chat">
+			<a onClick="document.getElementById('room').value='Music'; document.getElementById('submit').click();" id="music">
+				<img class="work_img" src="Music.jpg">
+				<span class="caption fade-caption">
+					<h3 class="oneLine">Music</h3>
+					<h4>Talk about it.</h4>
+				</span>
+			</a>
+  		</li>
+		<li class="col-md-4 col-xs-6 chat">
+			<a onClick="document.getElementById('room').value='General'; document.getElementById('submit').click();" id="general">
+				<img class="work_img" src="General.jpg">
+				<span class="caption fade-caption">
+					<h3 class="oneLine">Whatever</h3>
+					<h4>Talk about anything.</h4>
+				</span>
+			</a>
+		</li>
+		<li class="col-md-4 col-xs-6 chat">
+    		<a onClick="document.getElementById('room').value='Whiskey'; document.getElementById('submit').click();" id="whiskey">
+      			<img class="work_img" src="Whiskey.jpg">
+      			<span class="caption fade-caption">
+					<h3 class="oneLine">Whiskey</h3>
+					<h4>Scotch, Bourbon, or Rye?</h4>
+				</span>
+			</a>
+		</li>
+
+	</ul>
+</div>
+<div class="container">
+	<div class="login-block vertically-center-parent">
+		<div class="pull-left vertically-centered-child">
+			<div class="title">
+				<h1>A Not-So-Bad Chatroom</h1>
+			</div>
+		</div>
+		<div class="pull-right">
+			<div class="justify-left">
+				<h5>Step One:<br>Enter your name.</h5>
+				<div class="form-wrapper"> 
+					<form action="/" method="post">
+						<input type="text" name="room" id="room" class="hidden">
+						<input type="text" name="user" id="user">
+						<input type="submit" value="submit" id="submit" class="hidden">
+					</form>
+				<h5>Step Two:<br>Click on the chatroom you want to hang out in.</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
