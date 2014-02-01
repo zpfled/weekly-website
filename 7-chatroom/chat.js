@@ -1,19 +1,29 @@
-// need to start working on unique chatrooms, then do redis users
-// start at line 85
 
-
+require('newrelic');
 var url = require('url');
 var express = require('express');
 var partials = require('express-partials');
 var events = require('events');
 var EventEmitter = new events.EventEmitter();
 var port = process.env.PORT || 8080;
-var redis = require('redis');
-var redisClient = redis.createClient();
+
+if (process.env.REDISTOGO_URL) {
+	// TODO: redistogo connection
+	var rtg   = require('url').parse(process.env.REDISTOGO_URL);
+	var redis = require('redis');
+	var redisClient = redis.createClient(rtg.port, rtg.hostname);
+	
+	redisClient.auth(rtg.auth.split(':')[1]);
+} else {
+	var redis = require('redis');
+	var redisClient = redis.createClient();
+}
+
 var app = express(),
 	http = require('http'),
 	server = http.createServer(app),
 	io = require('socket.io').listen(server);
+
 
 // Middleware
 
@@ -38,7 +48,7 @@ function storeMessage(chatroom, timestamp, name, content) {
 
 // Server
 
-io.set('log level', 1);
+io.set('log level', 0);
 
 io.sockets.on('connection', function(client) {
 
@@ -55,9 +65,9 @@ io.sockets.on('connection', function(client) {
 
 	});
 
-	client.on('disconnect', function(client) {
-		console.log('Disconnect from line 58...');
-	});
+	// client.on('disconnect', function(client) {
+	// 	// console.log('Disconnect from line 58...');
+	// });
 
 	client.on('history', function(message) {
 		io.sockets.emit('history', message);
@@ -65,19 +75,19 @@ io.sockets.on('connection', function(client) {
 
 	client.on('General', function(message) {
 		io.sockets.emit('General', message);
-		console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
+		// console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
 		storeMessage('General', message.timestamp, message.name, message.content);
 	});
 
 	client.on('Whiskey', function(message) {
 		io.sockets.emit('Whiskey', message);
-		console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
+		// console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
 		storeMessage('Whiskey', message.timestamp, message.name, message.content);
 	});
 
 	client.on('Music', function(message) {
 		io.sockets.emit('Music', message);
-		console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
+		// console.log(message.timestamp + ': ' + message.name + ' says: ' + message.content);
 		storeMessage('Music', message.timestamp, message.name, message.content);
 	});
 
@@ -90,14 +100,14 @@ io.sockets.on('connection', function(client) {
 app.get('/', function(req, res) {
 	// I should sanitize this input.
 	res.render('index.ejs', { handle: 'User', title: 'A Not-So-Bad Chatroom' });
-	console.log('Requested home page...');
+	// console.log('Requested home page...');
 });
 
 app.post('/', function(req, res) {
 	res.header("Content-Type", "application/json; charset=UTF-8");
 	req.session.user = req.body.user;
 	req.session.room = req.body.room;
-	console.log(req.session.user + ' has joined the chat...');
+	// console.log(req.session.user + ' has joined the chat...');
 
 	res.redirect('/chat/' + req.session.room);
 });
@@ -113,7 +123,7 @@ app.get('/chat/:room', function(req, res) {
 
 
 server.listen(port);
-console.log('This chatroom is live! And it\'s' );
-console.log("listening on port " + port + "...");
+// console.log('This chatroom is live! And it\'s' );
+// console.log("listening on port " + port + "...");
 
 

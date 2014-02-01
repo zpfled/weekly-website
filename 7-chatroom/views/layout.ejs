@@ -1,12 +1,3 @@
-<!-- 
-I need to build in a window that shows current active users.
-I need to use redis for that.
-I need to test out deployment with redis.
-I need to decide if I'm going to include mulitple chatrooms. 
--->
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +13,7 @@ I need to decide if I'm going to include mulitple chatrooms.
 
 	//App
 
-		var server = io.connect(window.location.origin, {
-			'sync disconnect on unload': true
-		});
+		var server = io.connect();
 		var handle = <%- JSON.stringify(handle) %>;
 		var chatroom = <%- JSON.stringify(title) %>;
 		

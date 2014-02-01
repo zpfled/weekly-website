@@ -1,10 +1,14 @@
 {
   "name": "a-less-bad-chatroom",
   "version": "0.0.1",
-  "description": "general chat app with usernames, users-present display, and user authentication",
+  "description": "general chat app with usernames, multiple rooms, and timestamps",
   "main": "chat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.11",
+    "npm": "1.2.25"
   },
   "author": "Zach Pflederer",
   "license": "ISC",
@@ -17,6 +21,13 @@
     "url": "~0.7.9",
     "sanitizer": "~0.1.1",
     "redis": "~0.10.0",
-    "express-partials": "~0.2.0"
+    "express-partials": "~0.2.0",
+    "redis-url": "~0.2.0",
+    "parse-redis-url": "0.0.1",
+    "newrelic": "~1.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zpfled/weekly-website.git"
   }
 }
