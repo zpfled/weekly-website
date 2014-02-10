@@ -173,6 +173,7 @@ body {
 
 .bar-btn {
   height: 75px;
+  width: 290px;
   padding: 0 1em 0 1em;
 
   display: table-cell;
@@ -243,7 +244,7 @@ footer {
   width: 100%;
 }
 
-.bottom-bar {
+.footer {
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
 }
@@ -423,6 +424,10 @@ footer {
   .non-mobile {
     display: none;
   }
+
+  .inner-dividers div {
+    border-left: none;
+  }
 }
 
 .btn-bottom {
@@ -435,6 +440,19 @@ footer {
   border-color: #eee;
 }
 
-.btn-disabled:hover {
-  color:inherit;
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.inner-dividers div {
+  border-left: 1px solid #eee;
+  height: 100%;
+}
+
+.inner-dividers div:first-child {
+  border-left: none;
 }
