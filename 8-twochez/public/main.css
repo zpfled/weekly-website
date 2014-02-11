@@ -140,6 +140,12 @@ body {
   border-bottom-color: #fff;
 }
 
+.two {
+  color: #c00;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -172,7 +178,7 @@ body {
 }*/
 
 .bar-btn {
-  height: 75px;
+  height: 50px;
   width: 290px;
   padding: 0 1em 0 1em;
 
@@ -180,8 +186,8 @@ body {
 
   margin-bottom: 0;
 
-
-  line-height: 3.428571429;
+  /*line-height: 3.428571429;*/
+  line-height: 2.5em;
   text-align: center;
 
   cursor: pointer;
@@ -281,7 +287,7 @@ footer {
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
+  /* Pull out the header */
   .masthead {
     position: absolute;
     top: 0;
@@ -296,6 +302,11 @@ footer {
   .welcome-container,
   .bar-wrapper {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .bar-btn {
+    height: 75px;
+    line-height: 3.5em;
   }
 
   .bar-wrapper {
@@ -361,17 +372,6 @@ footer {
     position: static;
     font-size: 1.5em;
     font-weight: 100;
-    margin-top: 2em;
-  }
-
-  .welcome-menu li {
-    padding: .3em 0 .3em 0;
-  }
-  
-  .welcome-hours {
-    width: 100%;
-    position: static;
-    text-align: center;
   }
 
   .divider {
