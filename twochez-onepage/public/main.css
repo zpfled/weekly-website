@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300+Habibi);
+
 /*
  * Globals
  */
@@ -35,6 +37,33 @@ a:hover {
   display: none;
 }
 
+/* Typography */
+
+html, body {
+  font-family: 'Habibi', Georgia, "Times New Roman", serif;
+  font-size: 1.1em;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-family: 'Quicksand', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.75em;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+p {
+  letter-spacing: 0px;
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0;
+}
+
 
 /*
  * Base structure
@@ -44,17 +73,16 @@ html,
 body {
   height: 100%;
   background-color: #444;
-  background: url('./8-images/background.jpg') no-repeat center center fixed; 
+  background: url('./8-images/2chez-resturant1.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-rendering: optimizeLegibility;
   z-index: -1;
 }
 body {
   color: #fff;
-  text-align: center;
-
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -70,9 +98,7 @@ body {
   z-index: -1;
 }
 .welcome-container {
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 0;
+  border-bottom: 1px solid #fff;
 }
 
 .bar-wrapper {
@@ -99,6 +125,12 @@ body {
   margin-bottom: 10px;
   display: block;
   position: relative;
+}
+
+.masthead-brand a:hover,
+.masthead-brand a:focus {
+  border-bottom: 3px solid;
+  border-bottom-color: rgba(255,255,255,.25);
 }
 
 .masthead-nav {
@@ -146,11 +178,27 @@ body {
 }
 
 /*
+* Content
+*/
+
+.content {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2em;
+}
+
+.push-down {
+  margin-top: 25em;
+}
+
+/*
 * Navbar
 */
 
 .navbar-fixed-bottom {
   z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: auto;
 }
 
 .bottom-nav {
@@ -165,6 +213,7 @@ body {
 
 .bar-btn {
   height: 75px;
+  width: 290px;
   padding: 0 1em 0 1em;
 
   display: table-cell;
@@ -210,18 +259,15 @@ body {
 }
 
 .welcome-hours {
-  text-shadow: none;
-  width: 100%;
-  bottom: 100%;
-  top: auto !important;
-
-  text-align: left;
+  background-color: rgba(0, 0, 0, .2);
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 15px 0;
 }
 
 .welcome-hours li {
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  color: #444;
   font-size: 13px;
 }
 
@@ -229,11 +275,43 @@ body {
  * Footer
  */
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 
+.footer {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+}
+
+.jumbotron .container {
+  overflow: hidden;
+}
+
+/*
+* Contact Page
+*/
+
+.contact-jumbotron {
+  background-color: rgba(25, 25, 25, .75);
+  width: 85%;
+  border: 2px solid #eee;
+  border-radius: 1em;
+  margin-top: 160px !important;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.block {
+  position: relative;
+  margin-top: 1em;
+  overflow: hidden;
+}
 
 /*
  * For tablets and bigger
@@ -242,20 +320,16 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    /*position: fixed;*/
+    position: absolute;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
   .masthead,
-  .mastfoot,
   .welcome-container,
   .bar-wrapper {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
@@ -265,10 +339,12 @@ body {
     margin-top: 30%;
   }
 
-  /*Contact Page*/
+  .mobile {
+    display: none;
+  }
 
-  .contact-jumbotron {
-    top: 40%;
+  .non-mobile {
+    display: inherit;
   }
 }
 
@@ -277,12 +353,7 @@ body {
 */
 
 @media (min-width: 992px) {
-  .masthead {
-    position: fixed;
-  }
-
   .masthead,
-  .mastfoot,
   .welcome-container {
     width: 90%;
   }
@@ -303,6 +374,15 @@ body {
 @media (max-width: 767px) {
   body {
     background-color: inherit;
+    /*background: url('./8-images/background.jpg') no-repeat center center fixed; */
+      /*-webkit-background-size: cover;*/
+      /*-moz-background-size: cover;*/
+      /*-o-background-size: cover;*/
+    /*background-height: cover;*/
+  }
+
+  footer {
+    position: relative;
   }
 
   .welcome-heading {
@@ -316,6 +396,13 @@ body {
   .welcome-menu {
     width: 100%;
     position: static;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 2em;
+  }
+
+  .welcome-menu li {
+    padding: .3em 0 .3em 0;
   }
   
   .welcome-hours {
@@ -360,4 +447,49 @@ body {
     visibility: visible;
     display: inherit;
   }
+
+  .contact-jumbotron {
+    margin-top: 50px !important;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .non-mobile {
+    display: none;
+  }
+
+  .inner-dividers div {
+    border-left: none;
+  }
+}
+
+.btn-bottom {
+  width: 100%;
+}
+
+.btn-disabled {
+  color: #ffffff;
+  background-color: inherit;
+  border-color: #eee;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.inner-dividers div {
+  border-left: 1px solid #eee;
+  height: 100%;
+}
+
+.inner-dividers div:first-child {
+  border-left: none;
 }

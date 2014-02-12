@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/8-images/icon.png">
-    <title><%= @title %> | 2Chez</title>
+    <link rel="shortcut icon" href="public/8-images/icon.png">
+    <title>Welcome | 2Chez</title>
 
 
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="public/bootstrap/css/bootstrap.css" rel="stylesheet">
     
     <!-- Stylesheet -->
-    <link href="<%= @css %>.css" rel="stylesheet">
+    <link href="public/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <style id="holderjs-style" type="text/css"></style>
+      <style id="holderjs-style" type="text/css"></style>
 </head>
 
 <body>
@@ -48,7 +43,7 @@
                             </li>
                             <li>
                                 <a href="https://twitter.com/zachpflederer" title="Follow Us on Twitter">
-                                    <img class="link-img" src="/8-images/twitter-logo.png" alt="Twitter">
+                                    <img class="link-img" src="public/8-images/twitter-logo.png" alt="Twitter">
                                 </a>
                             </li>
                         </ul>
@@ -56,7 +51,33 @@
                 </div>
             </section>
             
-            <%= yield %>
+            <nav class="navbar-fixed-bottom">
+              <div class-"navbar-inner">
+                <div class="bar-wrapper">
+                  <div class="btn-group">
+                    <div class="btn-group">
+                      <a class="btn dropdown dropdown-toggle bar-btn" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                        Menu
+                      </a>
+                      <ul class="dropdown-menu dropup welcome-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lunch</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dinner</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Small Plates</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Wine</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cocktails</a></li>
+                      </ul>
+                    </div>
+                    <a href="#" class="btn bar-btn">
+                      Our Story
+                    </a>
+                    <a href="#" class="btn bar-btn">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
 
             
             <footer>
@@ -94,7 +115,7 @@
                                     </li>
                                     <li>
                                         <a href="https://twitter.com/zachpflederer" title="Follow Us on Twitter">
-                                            <img class="link-img" src="/8-images/twitter-logo.png" alt="Twitter">
+                                            <img class="link-img" src="public/8-images/twitter-logo.png" alt="Twitter">
                                         </a>
                                     </li>
                                     <li class="phone">
