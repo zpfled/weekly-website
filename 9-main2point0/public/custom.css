@@ -1,0 +1,28 @@
+/*
+Navbar
+*/
+
+.navbar-brand {
+	height: 70px;
+	width: auto;
+}
+
+.navbar-name {
+	font-size: 1em;
+}
+
+.navbar-social li {
+	display: inline-block;
+	/*padding: 1em;*/
+}
+
+.icon-link {
+	height: 3em;
+	width: auto;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.icon-link:hover {
+	opacity: .5;
+}
