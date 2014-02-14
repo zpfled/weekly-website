@@ -1,6 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Quicksand:400,700);
+
+/* Typography */
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+}
+
+h1, .h1 {
+  font-family: 'Quicksand',Helvetica,Arial,sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  /*text-transform: uppercase;*/
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+h2,
+.h2 {
+	/*font-family: "Quicksand", "Times New Roman",Helvetica,Arial,sans-serif;*/
+	font-family: 'Habibi', sans-serif;
+	font-weight: 200;
+}
+
+h3,
+.h3 {
+	font-size: 1em;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: .2em;
+	font-weight: 400;
+}
+
 /*
 Navbar
-*/
+ */
 
 .navbar-brand {
 	height: 70px;
@@ -11,18 +44,87 @@ Navbar
 	font-size: 1em;
 }
 
+.navbar-social {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+}
+
 .navbar-social li {
 	display: inline-block;
-	/*padding: 1em;*/
+	padding: 0;
 }
 
 .icon-link {
-	height: 3em;
+	height: 2em;
 	width: auto;
-	padding-left: .5em;
-	padding-right: .5em;
 }
 
 .icon-link:hover {
 	opacity: .5;
+	background-color: #fff;
+	background-color: rgba(100,100,100,.5);
+}
+
+/*
+Content
+ */
+
+.content {
+	padding-top: 2em;
+}
+
+.intro {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.intro h1,
+h3 {
+	text-align: center;
+}
+
+.content ul {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+.work {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	/*height: 100%;*/
+	/*width: 100%;*/
+	overflow: hidden;
+}
+
+.work a,
+.work-img {
+	display: inherit;
+	width: 100%;
+}
+
+.work-img {
+	border: 1px solid #ddd;
+}
+
+/*
+Mobile
+ */
+
+.md-screen {
+	display: none;
+}
+
+/*
+Tablets +
+ */
+
+@media (min-width: 768px) {
+
 }
