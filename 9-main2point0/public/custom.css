@@ -8,6 +8,17 @@ Site-Wide
 html,
 body {
 	background-color: #eee;
+	color: #444;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: inherit;
 }
 
 /*
@@ -23,16 +34,19 @@ h1, .h1 {
   font-family: 'Quicksand',Helvetica,Arial,sans-serif;
   font-size: 1.5em;
   line-height: 1em;
-  /*text-transform: uppercase;*/
   font-weight: 700;
   letter-spacing: .2em;
 }
 
 h2,
 .h2 {
-	/*font-family: "Quicksand", "Times New Roman",Helvetica,Arial,sans-serif;*/
-	font-family: 'Habibi', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
+	text-transform: uppercase;
+	font-size: .75em;
+	letter-spacing: .25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 h3,
@@ -50,6 +64,7 @@ Navbar
 .navbar-default {
 	background-color: #eee;
 	border: none;
+	opacity: .95;
 }
 
 .navbar-brand {
@@ -61,10 +76,17 @@ Navbar
 	font-size: 1em;
 }
 
+.no-padding-right {
+	padding-right: 0;
+}
+
 .navbar-social {
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .navbar-social li {
@@ -83,18 +105,23 @@ Navbar
 	background-color: rgba(250,250,250,.5);
 }
 
+.gravatar {
+	padding: 3px;
+}
+
 /*
 Content
  */
 
 .content {
-	padding-top: 2em;
+	padding-top: 3em;
 }
 
 .intro {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
+
 
 .intro h1,
 h3 {
@@ -178,6 +205,14 @@ h5 {
 }
 
 /*
+Footer
+ */
+
+footer h2 {
+	text-align: center
+}
+
+/*
 Mobile
  */
 
@@ -190,5 +225,14 @@ Tablets +
  */
 
 @media (min-width: 768px) {
+	h1,
+	.h1 {
+		padding-top: .5em;
+		font-size: 3.5em;
+	}
 
+	h3,
+	.h3 {
+		font-size: 2em;
+	}
 }
