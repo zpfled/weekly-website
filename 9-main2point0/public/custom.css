@@ -1,6 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Quicksand:400,700);
 
-/* Typography */
+
+/*
+Site-Wide
+ */
+
+html,
+body {
+	background-color: #eee;
+}
+
+/*
+Typography 
+ */
 
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -35,6 +47,11 @@ h3,
 Navbar
  */
 
+.navbar-default {
+	background-color: #eee;
+	border: none;
+}
+
 .navbar-brand {
 	height: 70px;
 	width: auto;
@@ -63,7 +80,7 @@ Navbar
 .icon-link:hover {
 	opacity: .5;
 	background-color: #fff;
-	background-color: rgba(100,100,100,.5);
+	background-color: rgba(250,250,250,.5);
 }
 
 /*
@@ -96,21 +113,68 @@ h3 {
 
 .work {
 	margin: 0;
-	padding: 0;
-	display: inline-block;
-	/*height: 100%;*/
-	/*width: 100%;*/
+	padding:0;
 	overflow: hidden;
+	position: relative;
+	list-style: none;  
+	display: inline-block;
 }
 
-.work a,
-.work-img {
-	display: inherit;
+.work li {
+	display: inline-block;
+}
+
+.work h4,
+h5 {
+	font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.work h4 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	padding-top: 35%;
+}
+
+.work h5 {
+	font-size: .8em;
+}
+
+.work img {
 	width: 100%;
 }
 
-.work-img {
-	border: 1px solid #ddd;
+.work_img {
+	display: block;
+	overflow: hidden;
+	position:absolute;
+	  -webkit-transition: all .3s ease-out;  
+	  -moz-transition: all .3s ease-out;  
+	  -o-transition: all .3s ease-out;  
+	  -ms-transition: all .3s ease-out;  
+	  transition: all .3s ease-out;  
+	left:0;
+	top:0;
+}
+
+.work:hover .fade,
+.work:focus .fade,
+.work:active .fade {
+  opacity: 1;
+}
+
+.work-title {
+	background-color: rgba(20,20,20,0.75);  
+	position: absolute;  
+	color: #fff;  
+	z-index: 2;  
+	left:0;
+	top:0;
+}
+
+.fade {  
+    opacity: 0;  
+    width: 100%;  
+    height:100%;
 }
 
 /*
