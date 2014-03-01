@@ -1,0 +1,54 @@
+<section id="menu" class="content">
+  <div class="inner">
+    
+    <h1>Menu</h1>
+
+    <!-- Menu accordion for -xs and -sm screens -->
+
+    <div class="visible-xs visible-sm panel-group" id="accordion">
+      <% @menus.each do |menu| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#<%= menu.split(' ').join('-') %>">
+                <%= menu %>
+              </a>
+            </h2>
+          </div>
+          <div id="<%= menu.split(' ').join('-') %>" class="panel-collapse collapse">
+            <div class="panel-body">
+  
+              <%= erb(:submenu, :layout => false, :locals => { :menu => menu }) %>
+          
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <!-- Menu tabs for -md and -lg screens -->
+
+      <!-- Nav tabs -->
+
+      <ul class="nav nav-tabs nav-justified visible-md visible-lg">
+        <% @menus.each do |menu| %>
+          <li class="h2 <%= 'active' if menu == 'lunch' %>">
+            <a href="#<%= menu.split(' ').join('-') + '-tab' %>" data-toggle="tab">
+              <%= menu %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content visible-md visible-lg">
+        <% @menus.each do |menu| %>
+          <div class="tab-pane fade in <%= 'active' if menu == 'lunch' %>" id="<%= menu.split(' ').join('-') + '-tab' %>">
+            <%= erb(:submenu, :layout => false, :locals => { :menu => menu }) %>
+          </div>
+        <% end %>
+      </div>
+
+<!-- top level -->
+  </div>
+</section>

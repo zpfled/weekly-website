@@ -1,0 +1,582 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300+Habibi);
+
+/*
+ Globals
+ */
+
+.hidden {
+  display: none;
+}
+ /*
+ Bootstrap Overrides
+  */
+
+ .nav>li>a {
+  border-radius: 0;
+  white-space: nowrap; /*fixes issue with text wrapping in nav-justified*/
+ }
+
+ .nav>li>a:hover, .nav>li>a:focus {
+  color: #fff;
+  background-color: transparent;
+ }
+
+.nav-tabs.nav-justified>li>a {
+  border: none;
+ }
+
+ .nav-tabs.nav-justified>li>a:hover {
+  border-bottom: 2px solid #666;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid #666;
+  border-radius: 0;
+ }
+
+ .nav-tabs>li.active>a, 
+ .nav-tabs>li.active>a:hover, 
+ .nav-tabs>li.active>a:focus {
+  background-color: transparent;
+ }
+
+ .nav-tabs.nav-justified>.active>a, 
+ .nav-tabs.nav-justified>.active>a:hover, 
+ .nav-tabs.nav-justified>.active>a:focus {
+  border-bottom: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid #fff;
+  border-radius: 0;
+  color: #fff;
+ }
+
+.nav-tabs.nav-justified {
+  margin: 0 auto;
+}
+
+ .panel {
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+ }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  text-decoration: none;
+}
+
+.link-img {
+  height: 20px;
+  width: auto;
+  opacity: .75;
+}
+
+.glyphicon {
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+.phone {
+  visibility: hidden;
+  display: none;
+}
+
+/* Typography */
+
+html, body {
+  font-family: 'Habibi', Georgia, "Times New Roman", serif;
+  font-size: 1.1em;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-family: 'Quicksand', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.75em;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+p {
+  letter-spacing: 0px;
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #444;
+  background: url('./images/2chez-restaurant1.jpg') center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-rendering: optimizeLegibility;
+  z-index: -1;
+}
+body {
+  color: #fff;
+}
+
+.welcome-container {
+  border-bottom: 1px solid #fff;
+}
+
+.bar-wrapper {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/*
+ * Header
+ */
+
+.masthead {
+  position: relative;
+  z-index: 1;
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+}
+
+.masthead-brand a:hover,
+.masthead-brand a:focus {
+  border-bottom: 3px solid;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.masthead-nav {
+  z-index: 2;
+  display: block;
+}
+
+.masthead-nav li {
+  display: inline-block;
+  z-index: 3;
+  position: relative;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    font-size: 8em;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*
+* Content
+*/
+
+.content-block {
+  position: absolute;
+}
+
+.content {
+  background: rgba(52,52,52, 1);
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+.push-down {
+  /*margin-top: 9em;*/
+  top: 100%;
+  bottom: auto;
+}
+
+.menu.nav {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1em;
+}
+
+/* Menu */
+
+.menu {
+  font-size: .85em;
+}
+
+.panel-title a:hover,
+.panel-title a:active {
+  color: #444;
+}
+
+.menu>dt {
+  text-transform: uppercase;
+}
+
+.menu>dd {  
+  margin-bottom: 1em;
+}
+
+.menu-msg {
+  min-height: 20px;
+  min-width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.menu-msg:after {
+  content: '.';
+  visibility: hidden;
+}
+
+/*
+* Navbar
+*/
+
+.navbar-nav li {
+  margin: 0 1em 0 1em;
+}
+
+.bottom-nav {
+  background-color: #555;
+  width: 100%;
+}
+
+.welcome-menu {
+  text-shadow: none;
+  width: 100%;
+  bottom: 100%;
+  top: auto !important;
+}
+
+.welcome-hours {
+  background-color: rgba(0, 0, 0, .2);
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 15px 0;
+}
+
+.welcome-hours li {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+}
+
+/*
+ * For tablets and bigger
+ */
+
+@media (min-width: 768px) {
+
+  /* Handle the widths */
+  .masthead,
+  .welcome-container,
+  .bar-wrapper {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .content-block {
+    width: 100%;
+  }
+
+  .bar-wrapper {
+    margin-top: 30%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .non-mobile {
+    display: inherit;
+  }
+}
+
+/*
+* For laptops and bigger
+*/
+
+@media (min-width: 992px) {
+  h1 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+
+  .welcome-header h1 {
+    text-align: left;
+  }
+}
+
+
+
+
+
+/*
+* For iPhones
+*/
+
+@media (max-width: 767px) {
+  body {
+    background-color: inherit;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .welcome-heading {
+    font-size: 1.5em;
+  }
+
+  .bar-wrapper {
+    margin-top: 30%;
+  }
+
+  .welcome-menu {
+    width: 100%;
+    position: static;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 2em;
+  }
+
+  .welcome-menu li {
+    padding: .3em 0 .3em 0;
+  }
+  
+  .welcome-hours {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .navbar-fixed-bottom {
+    position: relative;
+  }
+
+  .btn-group {
+    min-width: 100%;
+  }
+
+  .link-img {
+      height: 20px;
+    width: auto;
+    opacity: 1;
+  }
+
+  .glyphicon {
+    font-size: 20px;
+    vertical-align: bottom;
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .phone {
+    visibility: visible;
+    display: inherit;
+  }
+
+  .contact-jumbotron {
+    margin-top: 50px !important;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .non-mobile {
+    display: none;
+  }
+
+  .inner-dividers div {
+    border-left: none;
+  }
+}
+
+.btn-bottom {
+  width: 100%;
+}
+
+.btn-disabled {
+  color: #ffffff;
+  background-color: inherit;
+  border-color: #eee;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.inner-dividers div {
+  border-left: 1px solid #eee;
+  height: 100%;
+}
+
+.inner-dividers div:first-child {
+  border-left: none;
+}
+
+/*
+BlackOut Screen
+*/
+
+.blackout-page-wrapper {
+  position: fixed;
+  background-color: rgba(100, 100, 100, .75);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  padding-top: 4em;
+}
+
+@media (min-width: 768px) {
+  
+}
+
+/*
+Admin
+ */
+
+.modal-dialog {
+  background-color: #444;
+  border-radius: 1em;
+}
+.modal-content,
+.modal-body {
+  border-radius: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+
+.add-form input,
+select,
+button {
+  margin-top: .5em;
+  font-family: 'Quicksand', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.add-form button {
+  margin-top: 2em;
+}
+
+.add-form input, select {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
+  border-radius: .25em;
+}
+
+.add-form input {
+  padding-left: .4em
+}
+
+.add-form select {
+  background-color: #444;
+  display: inherit;
+}
+
+.delete-msg,
+.delete-confirmation,
+.menu-msg,
+.add-msg,
+.error-msg {
+  position: fixed;
+  z-index: 100;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.delete-msg h3,
+.delete-confirmation h3,
+.add-msg h3,
+.error-msg h3,
+.menu-msg h3 {
+  margin: 1em 1em auto 1em;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.delete-confirmation div {
+  height: auto;
+  overflow: hidden;
+  margin: 1em 1em auto 1em;
+}
+
+.delete-confirmation div button {
+  margin-top: 1em;
+}

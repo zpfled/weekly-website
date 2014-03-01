@@ -1,0 +1,36 @@
+<section class="blackout-page-wrapper">
+  <div class="inner container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <form id="form" class="form-login" role="form" action="/<%= @action.gsub(' ', '') %>" method="post">
+          <h2 class="form-login-heading">
+            Please <%= @action %>.
+          </h2>
+          <input label"name" name="name" type="name" class="form-control" placeholder="Name" required autofocus>
+          <% if @action == 'sign up' %>
+            <%= '<input label="email" name="email" type="email" class="form-control" placeholder="Email" required>' %>
+          <% end %>
+          <input label="password" name="password" type="password" class="form-control" placeholder="Password" required>
+          <button value="submit" name="submit" class="btn btn-lg btn-primary btn-bottom" type="submit">
+            <%= @action %>
+          </button>
+          <a href="/">return to main site</a>
+        </form>  
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- 
+
+Goals for this page:
+
+- Use form to pass :name, :email, and :password through params hash to 2Chez.rb
+- Create new User with given information
+- New User should not be admin
+
+
+-->

@@ -1,0 +1,106 @@
+<section id="task-bar" class="content">
+    <div class="inner container">
+        <h1 class="dashboard-greeting">Hi, <%= @user.capitalize %></h1>
+        <ul class="nav navbar-nav">
+            <li>
+                <form action="/logout" method="post">
+                    <button class="btn btn-lg btn-primary" type="submit">log out</button>
+                </form>
+            </li>
+            <li>
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addItemModal">
+                    add item
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- AddItem Modal -->
+<div class="modal fade" id="addItemModal" tabindex="-1" role="dialog" aria-labelledby="addItemModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 add-form">
+                <form action="/menu" method="post" id="add-item">
+                    <!-- Name Field -->
+                    <input class="col-xs-12 add-form" name="name" label="name" type="text" maxlength="30" placeholder="Item name">
+                    <!-- Description Field -->
+                    <input class="col-xs-12 add-form" name="description" label="description" type="text" maxlength="255" placeholder="Item description">
+                    <!-- Price Field -->
+                    <input class="col-xs-12 add-form" name="price" label="price" type="number" placeholder="Item price">
+                    <!-- Menu Select -->
+                    <select onChange="filterCategories(this)"class="col-xs-12 add-form" name="menu" label="menu">
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="small-plates">Small Plates</option>
+                        <option value="wine">Wine</option>
+                        <option value="cocktails">Cocktails</option>
+                    </select>
+                    <!-- Category Selects -->
+                        <select class="col-xs-12 add-form" id="lunch-cats" name="lunch_category" label="category">
+                            <option value="appetizers">Appetizers</option>
+                            <option value="beef">Beef</option>
+                            <option value="chicken">Chicken</option>
+                            <option value="salads">Salads</option>
+                            <option value="sandwiches">Sandwiches</option>
+                            <option value="seafood">Seafood</option>
+                        </select>
+                        <select style="display: none" class="col-xs-12 add-form" id="dinner-cats" name="dinner_category" label="category">
+                            <option value="appetizers">Appetizers</option>
+                            <option value="beef">Beef</option>
+                            <option value="chicken">Chicken</option>
+                            <option value="lamb">Lamb</option>
+                            <option value="pork">Pork</option>
+                            <option value="salads">Salads</option>
+                            <option value="seafood">Seafood</option>
+                            <option value="veal">Veal</option>
+                        </select>
+                        <select style="display: none" class="col-xs-12 add-form" id="wine-cats" name="wine_category" label="category">
+                            <option value="bubbly">Bubbly</option>
+                            <option value="chardonnay">Chardonnay</option>
+                            <option value="sauvignon-blanc">Sauvignon Blanc</option>
+                            <option value="interesting-whites">Interesting Whites</option>
+                            <option value="Pinot Grigio">Pinot Grigio</option>
+                            <option value="pinot-noir">Pinot Noir</option>
+                            <option value="merlot">Merlot</option>
+                            <option value="cabernet-sauvignon">Cabernet Sauvignon</option>
+                            <option value="interesting-reds">Interesting Reds</option>
+                        </select>
+                        <select style="display: none" class="col-xs-12 add-form" id="small-plates-cat" name="small-plates_category" label="category">
+                            <option value="small-plates">Small Plates</option>
+                        </select>
+                        <select style="display: none" class="col-xs-12 add-form" id="cocktails-cat" name="cocktails_category" label="category">
+                            <option value="cocktails">Cocktails</option>
+                        </select>
+                    <!-- Submit Button -->
+                    <button type="submit" class="col-xs-12 btn btn-lg btn-success">
+                        add item
+                    </button>
+                    <button id="cancel" type="button" class="col-xs-12 btn btn-lg btn-danger" data-dismiss="modal">
+                        cancel
+                    </button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <%= erb :menu, layout: false %>
+
+
+<!-- 
+
+Goals for this page:
+
+- Allow User to edit existing MenuItem properties
+X Redirect to login page if accessed by non-logged-in user
+X Allow User to create MenuItems
+X Display current MenuItems, organized by menu (lunch, dinner, etc.)
+X Allow User to destroy MenuItems, with confirmation prompt
+X Be accessible only through a successful login
+
+-->

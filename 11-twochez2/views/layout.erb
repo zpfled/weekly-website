@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/icon.png">
+    <title><%= @title %> | 2Chez</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+
+<body>
+
+<!-- Full-Screen Messages -->
+
+        <div class="error-msg container">
+            <h3 id="error-msg" class="alert alert-warning"></h3>
+        </div>
+
+        <div class="add-msg container">
+            <h3 id="add-msg" class="alert alert-success"></h3>
+        </div>
+        
+        <div class="menu-msg container">
+            <h3 id="menu-msg" class="alert alert-info"></h3>
+        </div>
+
+        <div class="delete-confirmation container">
+            <div class="alert alert-info">
+                <h3>Are you sure you want to delete this?</h3>
+                <button class="btn btn-big btn-danger col-xs-12 col-md-4 col-md-offset-4" id="no">no</button>
+                <button class="btn btn-big btn-primary col-xs-12 col-md-4 col-md-offset-4" id="yes">yes</button>
+            </div>
+        </div>
+
+        <div class="delete-msg container">
+            <h3 id="delete-msg" class="alert alert-success"></h3>
+        </div>
+        
+<!-- Main -->
+
+    <div class="site-wrapper">
+        <section class="welcome-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">
+                        <a class="logo-link" href="/">
+                            <span style="color: #d00; font-weight: 800; font-size: 1.1em">2</span>Chez
+                        </a>
+                        <% unless @admin %>
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <a class="btn btn-sm btn-primary" href="/signup">sign up</a>
+                                <a class="btn btn-sm btn-primary" href="/login">log in</a>
+                            </div>
+                        </div>
+                        <% end %>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        
+        <%= yield %>
+        
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/imagesloaded.js"></script>
+    <script src="/js/skrollr.js"></script>
+    <!-- <script src="../../assets/js/docs.min.js"></script> -->
+</body>
+</html>

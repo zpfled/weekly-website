@@ -1,0 +1,52 @@
+<!-- <section class="inner"> -->
+<% @categories.each do |category| %>
+
+  <% @relevant_items = @menu_items.select { |item| item.menu == menu && item.category == category } %>
+  <% @relevant_items.sort! { |x, y| x.price <=> y.price } %>
+  <% @relevant_categories = [] %>
+  <% @relevant_items.each do |item| %>
+    <% @relevant_categories.push(item.category) unless @relevant_categories.include?(item.category) %>
+    <% @relevant_categories.sort! %>
+  <% end %>
+  
+  <% @relevant_categories.each do |relevant_category| %>  
+
+  <h3>
+    <%= relevant_category.split('-').each { |word| word.capitalize! }.join(' ') unless relevant_category == menu.split(' ').join('-') %>
+  </h3>
+  
+  <% @relevant_items.each do |item| %>
+    <article>
+      <dt class="item-name">
+        <%= item.name %>
+        <span class="item-price pull-right">
+          <%= item.price %>
+        </span>
+      </dt>
+      <dd class="item-description">
+        <%= item.description %>
+      </dd>
+      <% if @admin %>
+        <div class="row">
+          <form action="/<%= item.id %>/raise" method="get" class="raise">
+            <div class="id hidden"><%= item.id %></div>
+            <input name="id" label="id" value="<%= item.id %>" type="hidden">
+            <input type="submit" class="btn btn-lg btn-warning col-xs-12 col-md-4" value="raise price by $1">
+          </form>
+          <form action="/<%= item.id %>/reduce" method="get" class="reduce">
+            <div class="id hidden"><%= item.id %></div>
+            <input name="id" label="id" value="<%= item.id %>" type="hidden">
+            <input type="submit" class="btn btn-lg btn-primary col-xs-12 col-md-4" value="reduce price by $1">
+          </form>
+          <form action="/<%= item.id %>/delete" method="get" class="delete">
+            <div class="id hidden"><%= item.id %></div>
+            <input name="id" label="id" value="<%= item.id %>" type="hidden">
+            <input type="submit" class="btn btn-lg btn-danger col-xs-12 col-md-4" value="delete <%= item.name %>">
+          </form>
+        </div>
+      <% end %>
+    </article>
+    <% end %>
+  <% end %>
+<% end %>
+<!-- </section> -->
