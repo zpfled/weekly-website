@@ -1,8 +1,8 @@
 require 'bundler'
 Bundler.require(:default, :development)
 
-# DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/2chez')
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/2chez')
+# DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
 
 class User
 	include DataMapper::Resource
@@ -15,7 +15,7 @@ class User
 	property :admin,		Boolean,	default: false,		writer: :protected
 
 	def authenticate?(attempted_password)
-		self.password == attempted_password ? true : false
+		self.password != attempted_password ? true : false
 	end
 
 	def logged_in?(user)
@@ -35,18 +35,18 @@ class MenuItem
 	property :price,		Integer, 	required: true
 end
 
-# User.create(name: 'Todd', email: 'toddhohulin@mchsi.com', password: 'foo', admin: true) ? User.all.length == 0 : false
-
 DataMapper.finalize.auto_upgrade!
 # DataMapper.finalize.auto_migrate!
 
 class TwoChez < Sinatra::Application
-	use Rack::Session::Cookie, 	secret: 		'kilimanjaro',
-								expire_after: 	3600 # session expires after 1 hour
+	enable :sessions
+		set :session_secret, 'persenukedipsekjonukpunon',
+		expire_after: 	3600 # session expires after 1 hour
 
 # Routes
 
 before do
+	@users = User.all
 	@menu_items = MenuItem.all
 
 	@menus = []
@@ -56,13 +56,6 @@ before do
 	@categories = []
 	@menu_items.map { |item| @categories.push(item.category) unless @categories.include?(item.category) }
 	@categories.sort!
-
-	puts '[Params]'
-	p params
-
-	headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
-	headers['Access-Control-Allow-Origin'] = '*'
-	headers['Access-Control-Allow-Headers'] = 'accept, authorization, origin'
 end
 
 after do
@@ -75,7 +68,6 @@ options '/*' do
     headers['Access-Control-Allow-Headers'] ="accept, authorization, origin"
 end
 
-#untested
 get '/' do
 	@title = 'Welcome'
 	@admin = false
@@ -83,43 +75,49 @@ get '/' do
 	erb :index
 end
 
-#tested
 get '/signup' do
+	@message = ' '
 	@title = 'Signup'
 	@action = 'sign up'
-	@users = User.all
 	erb :login
 end
 
-#tested
 post '/signup' do
-	user = User.new
-	user.name = params[:name]
-	user.email = params[:email]
-	user.password = params[:password]
-	user.save
-	redirect '/login'
+	@user_exists = false
+
+ 	@users.each { |user| @user_exists = true if params[:name] == user.name }
+
+ 	if @user_exists
+ 		redirect '/'
+ 	else
+		user = User.new
+		user.name = params[:name]
+		user.email = params[:email]
+		user.password = params[:password]
+		user.save
+		redirect '/login'
+	end
 end
 
-#tested
 get '/login' do
+	@message = "#{User.last.name}, #{User.last.password}"
 	@title = 'Login'
 	@action = 'log in'
 	erb :login
 end
 
-#tested
 post '/login' do
 	session[:name] = params[:name]
-	session[:password] = params[:password]
+	@password = session[:password] = params[:password]
+	
 	user = User.first(name: session[:name])
 
 	if user.nil?
 		redirect '/'
-	elsif user.authenticate?(session[:password])
+	elsif user.authenticate?(@password)
 		redirect '/admin'
 	else
-		redirect '/login'
+		redirect "/#{user.password}"
 	end
 end
 
@@ -128,7 +126,6 @@ post '/logout' do
 	redirect '/'
 end
 
-# untested
 get '/admin' do
 	@title = 'Dashboard'
 	@user = session[:name]
@@ -138,6 +135,7 @@ get '/admin' do
  		erb :admin
  	else 
  		redirect '/login'
+ 		# erb :admin
  	end
 end
 
@@ -152,7 +150,6 @@ get '/menu' do
  	end
 end
 
-# untested
 post '/menu' do
 	item = MenuItem.new
 	item.name = params[:name]
